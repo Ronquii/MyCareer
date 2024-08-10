@@ -1,2 +1,2 @@
 # MyCareer
-camila, gusvato, layane, victor e yan
+camila, gustavo, layane, victor e yan
