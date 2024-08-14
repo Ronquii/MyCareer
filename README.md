@@ -1,5 +1,5 @@
 # MyCareer
-Integrantes: Camila, Gustavo Vieira, Layane, Victor e Gustavo Yan
+Integrantes: Camila, Gustavo Vieira, Victor e Gustavo Yan
 
 ////////////////////////////////////////
 
