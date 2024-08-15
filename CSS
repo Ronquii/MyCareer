@@ -5,7 +5,7 @@ body {
 .main-login {
     width: 100vw;
     height: 100vh;
-    background: #000000;
+    background: #1a1e29;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -21,24 +21,72 @@ body {
 }
 
 .left-login>h1 {
-    color: #00c48e;
+    position: static;
+    color: #ffffff;
+    font-size: 40px;
+    font-family: sans-serif;
+    font-weight: 100
+    
 }
 
 .right-login {
-    width: 50vw;
+    position: block;
+    width: 40vw;
     height: 100vh;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
 }
-
 .card-login {
-    width: 60%;
+    width: 20vw;
     display: flex;
+    position: flex;   
+    align-items: center;
+    flex-direction: column;
+    padding: 85px 80px;
+    background: #112133;
+    border-radius: 120px;
+    font-family: Calibri, sans-serif;
+    
+    
+}
+.card-login > h1 {
+    color: rgb(225, 222, 222);
+    display: block;
+    
+    
+}
+.textfield {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+}
+
+.lbr_senha{
+color: #ffffff;
+position: relative;
+}
+.textfield > input {
+    width: 300px;
+    height: 40px;
+    border: none;
+    border-radius: 60px;
+    background: #373a80;
+    font-size: 12pt;
+}
+.btn-login {
+    width: 15vw;
+    height: 6vh;
+    border-radius: 50px;
+    display: flex;
+    position: relative;
+    top: 70px;
+    color: #132d46;
+    font-size: 30px;
+    background-color: #00c48e;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 20px 60px;
-    background: #16273a;
-    border-radius: 40px;
 }
