@@ -5,10 +5,28 @@ body {
 .main-login {
     width: 100vw;
     height: 100vh;
-    background: #1a1e29;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-image: url("https://c.pxhere.com/photos/7d/4a/milky_way_starry_sky_night_sky_star_night_sky_space_cosmos-1438751.jpg!d");
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+    background-blend-mode: multiply;
+
+
+}
+
+.main-login::after {
+    content: '';
+    background-color: #0c0e13;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    opacity: 0.94;
+    z-index: -1;
 }
 
 .left-login {
@@ -21,12 +39,23 @@ body {
 }
 
 .left-login>h1 {
-    position: static;
+    display: static;
+    position: relative;
+    top: 70px;
     color: #ffffff;
-    font-size: 40px;
+    font-size: 50px;
     font-family: sans-serif;
-    font-weight: 100
-    
+    font-weight: 700;
+}
+
+.left-login>h2 {
+    display: static;
+    position: relative;
+    bottom: 70px;
+    color: #ffffff;
+    font-size: 50px;
+    font-family: sans-serif;
+    font-weight: 700;
 }
 
 .right-login {
@@ -37,56 +66,124 @@ body {
     justify-content: flex-end;
     align-items: center;
 }
+
 .card-login {
     width: 20vw;
     display: flex;
-    position: flex;   
+    position: block;
     align-items: center;
     flex-direction: column;
-    padding: 85px 80px;
-    background: #112133;
+    padding: 20px 30px;
+    background: #132d46;
+    border: 40px solid;
+    border-color: #122135;
     border-radius: 120px;
     font-family: Calibri, sans-serif;
-    
-    
-}
-.card-login > h1 {
-    color: rgb(225, 222, 222);
-    display: block;
-    
-    
-}
-.textfield {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    color: rgb(255, 255, 255);
+
+
 }
 
-.lbr_senha{
-color: #ffffff;
-position: relative;
+.card-login>h1 {
+    color: rgb(225, 222, 222);
+    display: block;
+    position: relative;
+    font-size: 40px;
+
+
 }
-.textfield > input {
+
+.textfield1 {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    flex-direction: column;
+    color: rgb(255, 255, 255);
+    top: -10px;
+}
+
+.textfield1>label {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    flex-direction: column;
+    color: rgb(255, 255, 255);
+    top: -10px;
+}
+
+.textfield2>label {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    flex-direction: column;
+    color: rgb(255, 255, 255);
+    top: -5px;
+}
+
+.lbr_senha {
+    position: relative;
+}
+
+.textfield1>input {
     width: 300px;
     height: 40px;
     border: none;
     border-radius: 60px;
     background: #373a80;
     font-size: 12pt;
+    border: #0c0e13;
+    border-style: solid;
+    border-width: 1px;
 }
+
+.textfield2>input {
+    width: 300px;
+    height: 40px;
+    border: none;
+    border-radius: 60px;
+    background: #373a80;
+    font-size: 12pt;
+    border: #0c0e13;
+    border-style: solid;
+    border-width: 1px;
+}
+
 .btn-login {
     width: 15vw;
     height: 6vh;
     border-radius: 50px;
     display: flex;
     position: relative;
-    top: 70px;
+    top: 40px;
     color: #132d46;
-    font-size: 30px;
+    font-size: 24px;
+    font-weight: 700;
     background-color: #00c48e;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    border-width: 0px;
+}
+
+.lbr_senha {
+    display: flex;
+    position: relative;
+    top: 10px;
+    right: 23px;
+    color: #ffffff;
+}
+
+.recovery {
+    position: relative;
+    left: 50px;
+    font-weight: 500;
+}
+
+.Conta {
+    display: block;
+    position: relative;
+    top: 44px;
+    color: white;
+    font-size: 13px;
+    font-family: sans-serif;
+    font-weight: 600;
 }
