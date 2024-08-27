@@ -88,13 +88,7 @@ body {
     display: block;
     position: relative;
     font-size: 40px;
-}
-
-.card-login>bvd {
-    color: rgb(225, 222, 222);
-    position: relative;
-    font-size: 40px;
-    top: -10px;
+    top: 50px;
 }
 
 .textfield1 {
