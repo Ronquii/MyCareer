@@ -1,0 +1,36 @@
+body {
+   margin: 0;
+   
+}
+.Card-home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.titulo {
+    background-color: #132d46;
+    padding-left: 600px;
+}
+
+.serviço, .entrar, .quem_somos, .fale_conosco, .registre, .empresa, ::after {
+    height: 40px;
+    padding: 1px;
+    border-radius: 100px;
+    cursor:pointer;
+    margin-left: 0px;
+    margin: none;
+    background-color: #132d46;
+    border-style: none;
+    color: aliceblue;
+    font-size: 17px;
+    font-weight: 700;
+    width: 9vw;
+}
+
+
+.entrar, .registre {
+    background-color: grey;
+    left: 100px;
+    display: inline-block;
+}
