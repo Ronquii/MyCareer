@@ -1,0 +1,62 @@
+body {
+    margin: 0
+}
+.titulo {
+    padding-left: 500px;
+    background-color: #132d46;
+}
+.serviço, .entrar, .quem_somos, .fale_conosco, .registre, .empresa, ::after {
+    height: 40px;
+    padding: 1px;
+    border-radius: 100px;
+    cursor:pointer;
+    margin-left: 0px;
+    margin: none;
+    background-color: #132d46;
+    border-style: none;
+    color: aliceblue;
+    font-size: 17px;
+    font-weight: 700;
+    width: 9vw;
+}
+
+
+.entrar, .registre {
+    background-color: grey;
+    left: 100px;
+    display: inline-block;
+}
+
+.contato{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #132D46;
+    padding: 100px;
+    font-size: 130px;
+    color: #ffffff;
+}
+.infos {
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+    float:left;
+
+}
+.formulário {
+    display: block;
+    position: absolute;
+    width: 100%;
+    justify-items: center;
+    align-items: flex-end;
+    left: 479px;
+    background-color: aqua;
+}
+.formulário > input {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    border-radius: 30px;
+    left: 100px;
+
+}
