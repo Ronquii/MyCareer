@@ -4,6 +4,7 @@ Integrantes: Camila (202402393839), Gustavo Vieira (202402395246), Victor (20240
 ////////////////////////////////////////
 
 Nosso site tem o objetivo a gestão de carreira. Nosso foco é atender às necessidades dos profissionais e fornecer planejamento de carreira de forma objetiva, utilizando métodos analíticos, com soluções para cada curso, graduação, abordagem comportamental, etc. fornecidas pelos melhores especialistas, direcionada para cada perfil fornecendo aos nossos clientes a oportunidade de alavancar sua carreira e alcançar satisfação pessoal e profissional
+
 Objetivo da pagina Login:
 
 Para que o usuário possa acessar o site
