@@ -25,39 +25,51 @@
 .titulo {
     background-color: #060f18;
     position: absolute;
-    width: 1498px;
+    width: 1490px;
     height: 90px;
+}
+.title_card{
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 40;
+    margin: 50px;
+    margin-left: 10px;
 }
 
 button {
-    display: inline-flex;
+    display: flexbox;
+    position: relative;
     justify-content: center;
-    align-items: center;
+    align-items:center;
     justify-items: center;
-    padding: 10px;
     background-color: transparent;
     color: white;
     border-style: none;
     cursor: pointer;
-    position: absolute;
-    top: 29px;
-    font-size: 15px;
-    padding-left: 150px;
+    position: relative;
+    font-size: 17px;
+    margin-left: 20px;
+    padding: 09px;
+    top: 34%;
+    left: 700px;
+    border-radius: 100px;
+    
 }
-.serviço{
-left: 700px;
-background-color: aqua;
-}
-.fale_conosco{
-left: 800px;
-}
-.empresa{
-left: 900px;
-}
-.quem_somos{
-left: 1000px
-}
+.serviço:hover {
+    background-color: #00c48e;
 
+}
+.fale_conosco:hover {
+    background-color: #00c48e;
+
+}
+.empresa:hover {
+    background-color: #00c48e;
+
+}
+.quem_somos:hover {
+    background-color: #00c48e;
+
+}
 .entrar, .registre {
     background-color: grey;
     position: absolute;
@@ -84,42 +96,12 @@ left: 1000px
     padding: 10px;
     background-color: #2c2c2c;
 }
-
-.qr_conhecer {
-    background-color: #c7c4c4;
-    color: #060f18;
-    font-weight: 550;
-    font-style: normal;
-    font-family: Calibri, sans-serif;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    position:absolute;
-    left:640px;
-    border-radius: 100px;
-    border-style: none;
-    padding: 10px;
-    margin: none;
-    top: 440px;
+.entrar:hover{
+    background-color: #00c48e;
     
-
 }
-.acs_conta{
-    background-color: #2c2c2c;
-    color: white;
-    font-weight: 550;
-    font-style: normal;
-    font-family: Calibri, sans-serif;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    position:absolute;
-    left:760px;
-    border-radius: 100px;
-    border-style: none;
-    padding: 10px;
-    margin: none;
-    top: 440px;
+.registre:hover {
+    background-color: #00c48e;
 
 }
 
