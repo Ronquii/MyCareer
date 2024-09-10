@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="dialog.css" />
+    <script src="dialog.js" defer></script>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" ;>
     <title>Login</title>
 </head>
@@ -21,35 +23,65 @@
             <div class="Linha-bg"></div>
             <div class="card-login">
 
-
                 <h1>LOGIN</h1>
-                <div class="textfield1">
-                    <label for="usuario">Usuário</label>
-                    <input type="text" name="usuario" placeholder="  Usuário">
-                </div>
-                <div class="textfield2">
-                    <label for="Senha1">Senha</label>
-                    <input type="password" name="senha" placeholder="  Senha">
-                </div>
-                <div class="lbr_senha">
-
+						<div class="textfield1">
+							<label for="usuario">Usuário</label>
+							<input type="text" name="usuario" placeholder="  Usuário">
+						</div>
+						<div class="textfield2">
+							<label for="Senha1">Senha</label>
+							<input type="password" name="senha" placeholder="  Senha">
+						</div>
+						<div class="lbr_senha">
 
                     <input type="checkbox">
                     Lembrar senha
                     <span style="color: #096a57;">
                     
-                <div class="recovery">
-                    <label for="recuperar">Esqueceu a senha?</label></span></div>
+                        <div class="recovery">
+                            <label for="recuperar">Esqueceu a senha?</label></span></div>
+        
+                        </div>
+                        <div>
+                            <button class="btn-login"><a href="Pagina_inicial.html">ENTRAR</a></button>
+                        </div>
+                        <div class="Conta">
 
-                </div>
-                <div>
-                    <button class="btn-login"><a href="Pagina_inicial.html">ENTRAR</a></button>
-                </div>
-                <div class="Conta">
-
-                    <label for="crconta">Não tem conta? <a href="registre_se.html"><span style="color: #096a57">Registre-se</span></a></label>
-                </div>
-
+                            <label for="crconta">Não tem conta? <!--<a href="registre_se.html"> --><button id="open-modal">Crie agora!</button>
+                                <div id="fade" class="hide"></div>
+                                <div id="modal" class="hide">
+                                  <div class="modal-header">
+                                    <h1>Bem-Vindo</h1>
+                                    <button id="close-modal"><b>X</b></button>
+                                  </div>
+                                  <div class="modal-body">
+                                    <div class="form">
+                                        <div class="textfield1">
+                                            <label for="usuario">Nome Completo</label>
+                                            <input type="text" name="usuario" placeholder="  Nome">
+                                        </div>
+                                        <br><br>
+                                        <div class="textfield1">
+                                            <label for="usuario">E-mail</label>
+                                            <input type="text" name="usuario" placeholder="  E-mail">
+                                        </div>
+                                        <div class="textfield2">
+                                            <label for="Senha">Senha</label>
+                                            <input type="password" name="senha" placeholder="  Senha">
+                                        </div>
+                                        <div class="textfield2">
+                                        <br><br>
+                                            <label for="Senha">Confirmar Senha</label>
+                                            <input type="password" name="senha" placeholder="  Confirmar Senha">
+                                        </div>
+                                    </div>
+                                    <div id="save-modal">
+                                        <button class="save-modal">Criar Conta</button>
+                                    </div>
+                                  </div>
+                                </div>
+                            </label>
+                        </div>
             </div>
 
         </div>
