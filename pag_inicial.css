@@ -2,9 +2,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    max-width: 1600px;
 }
 body {
-width: 1600px;
+max-width: 1600px;
+font-family: 'Poppins', sans-serif;
+
 }
 .Card-home{
     display: flex;
@@ -35,48 +38,59 @@ width: 1600px;
     flex-direction: column;
     position:absolute;
     left: 600px;
-    top: 100px;
+    top: 120px;
 
 }
 .titulo {
-    background-color: #060f18;
-    position: absolute;
+    background-color: #1A1E29;
+    position: fixed;
     width: 1600px;
     height: 90px;
+    z-index: 1000;
+}
+.title_card{
+    font-family: 'Poppins', sans-serif;
 }
 
-button {
-    display: inline-flex;
+.titulo button {
+    display: flexbox;
+    position: relative;
     justify-content: center;
-    align-items: center;
+    align-items:center;
     justify-items: center;
-    padding: 10px;
     background-color: transparent;
     color: white;
     border-style: none;
     cursor: pointer;
-    position: absolute;
-    top: 29px;
-    font-size: 15px;
-    padding-left: 150px;
+    position: relative;
+    font-size: 17px;
+    margin-left: 20px;
+    padding: 09px;
+    top: 34%;
+    left: 700px;
+    border-radius: 100px;
+    
 }
-.serviço{
-left: 700px;
+.serviço:hover {
+    background-color: #00c48e;
+
 }
-.fale_conosco{
-left: 800px;
+.fale_conosco:hover {
+    background-color: #00c48e;
+
 }
-.empresa{
-left: 900px;
+.empresa:hover {
+    background-color: #00c48e;
+
 }
-.quem_somos{
-left: 1000px
+.quem_somos:hover {
+    background-color: #00c48e;
+
 }
 
 
 
-.entrar, .registre {
-    background-color: grey;
+.entrar, .registre  {
     position: absolute;
     left: 1380px;
     top: 13px;
@@ -91,7 +105,7 @@ left: 1000px
     border-style: none;
     color: aliceblue;
     font-size: 17px;
-    font-weight: 100;    
+    font-weight: 100;
 }
 .entrar {
     padding: 10px;
@@ -101,24 +115,37 @@ left: 1000px
     padding: 10px;
     background-color: #2c2c2c;
 }
+.entrar:hover{
+    background-color: #00c48e;
+    
+}
+.registre:hover {
+    background-color: #00c48e;
 
+}
 .qr_conhecer {
     background-color: #c7c4c4;
     color: #060f18;
     font-weight: 550;
     font-style: normal;
-    font-family: Calibri, sans-serif;
+    font-family: 'Poppins', sans-serif;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     position:absolute;
-    left:640px;
+    left:610px;
     border-radius: 100px;
     border-style: none;
     padding: 10px;
     margin: none;
     top: 440px;
-    
+}
+.qr_conhecer:hover{
+    background-color: #00c48e;
+
+}
+.acs_conta:hover {
+    background-color: #00c48e;
 
 }
 .acs_conta{
@@ -131,32 +158,97 @@ left: 1000px
     justify-content: center;
     flex-direction: column;
     position:absolute;
-    left:760px;
+    left:780px;
     border-radius: 100px;
     border-style: none;
     padding: 10px;
     margin: none;
     top: 440px;
+    
 
-}
-.cards {
-    background-color: #ff0000;
+}  
+  .carousel-container {
+    position: relative;
+    width: 1520px;
+    overflow: hidden;
+    background-color: #1A1E29;
+    padding: 10px;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 28px;
+    margin-bottom: 30px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  
+  .carousel {
     display: flex;
-    justify-content:baseline;
-    align-items:baseline;
-    position: relative;
-    }
-.cards h2{
-    display: inline-flex;
-    position: relative;
-    justify-content:flex-start;
-
-}
-.cards h4 {
-    display: inline-flex;
-    position: relative;
-    justify-content: left;
-    align-items: baseline;
-    flex-direction: column;
-}
-
+    transition: transform 0.8s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  }
+  
+  .box {
+    min-width: 100%;
+    padding: 10px;
+    background: #2C2C34;
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+    transform: scale(0.9);
+    opacity: 0.8;
+    transition: transform 0.5s, opacity 0.5s;
+  }
+  
+  .box:hover {
+    transform: scale(1);
+    opacity: 1;
+  }
+  
+  .icon {
+    margin-bottom: 15px;
+  }
+  
+  .icon i {
+    font-size: 40px;
+    color: #00C48E;
+  }
+  
+  .box h2 {
+    font-size: 22px;
+    color: #00C48E;
+    margin-bottom: 10px;
+  }
+  
+  .box p {
+    font-size: 16px;
+    color: #EAEAEA;
+  }
+  
+  button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+    border-radius: 100%;
+    transition: background-color 0.5s;
+  }
+  
+  button.prev {
+    left: 10px;
+  }
+  
+  button.next {
+    right: 10px;
+  }
+  
+  button:hover {
+    background-color: #00C48E;
+  }
+  
