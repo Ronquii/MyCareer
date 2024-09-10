@@ -79,8 +79,6 @@ body {
     border-color: #122135;
     border-radius: 120px;
     font-family: Calibri, sans-serif;
-
-
 }
 
 .card-login>h1 {
@@ -88,7 +86,7 @@ body {
     display: block;
     position: relative;
     font-size: 40px;
-    top: 20px;
+    top: -20px;
 }
 
 .textfield1 {
