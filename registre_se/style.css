@@ -79,6 +79,7 @@ body {
     border-color: #122135;
     border-radius: 120px;
     font-family: Calibri, sans-serif;
+    z-index: 1;
 }
 
 .card-login>h1 {
