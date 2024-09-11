@@ -181,6 +181,7 @@ button {
     margin-left: 3%;
     z-index: 4;
     position: absolute;
+    padding-bottom: 50px;
 }
 
 .gd-lista-tres{
@@ -217,6 +218,7 @@ button {
     margin-top: 20px;
     padding-right: 3%;
     color:#ffffff;
+    padding-bottom: 50px;
 }
 
 
