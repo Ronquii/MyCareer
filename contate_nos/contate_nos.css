@@ -1,9 +1,24 @@
 body {
     margin: 0
+    
 }
 .titulo {
     padding-left: 500px;
-    background-color: #132d46;
+    background-color: #00010a;
+    width: 900px;
+    height: 63px;
+    
+    
+    
+}
+.logo{
+    position: absolute;
+    display: flex;
+    width: 50px;
+    height: 50px;
+    left: 4px;
+    padding: 4px;
+
 }
 .serviço, .entrar, .quem_somos, .fale_conosco, .registre, .empresa, ::after {
     height: 40px;
@@ -16,7 +31,7 @@ body {
     border-style: none;
     color: aliceblue;
     font-size: 17px;
-    font-weight: 700;
+    font-weight: 500px;
     width: 9vw;
 }
 
@@ -36,27 +51,94 @@ body {
     font-size: 130px;
     color: #ffffff;
 }
+
+    
+
 .infos {
-    background-color: red;
+    background-color: #FFFFFF;
     display: flex;
     flex-direction: column;
     float:left;
+    Font-family: Cambria;}
 
+    .infocontato {
+    font-size: 18px;
+    Font-family: Cambria;
+    
 }
 .formulário {
-    display: block;
     position: absolute;
-    width: 100%;
-    justify-items: center;
-    align-items: flex-end;
-    left: 479px;
-    background-color: aqua;
-}
-.formulário > input {
-    display: flex;
-    justify-items: center;
+    display: inline;
+    flex-direction: column;
     align-items: center;
-    border-radius: 30px;
-    left: 100px;
+    justify-content: center;
+    width: 50%;
+    left: 672px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    Font-family: Cambria;
+    border-style: none;
+}
 
+input, select, textarea, button {
+    border-radius: 20px;
+    background-color: rgb(224, 229, 231);
+    
+}
+textarea {
+width: 500px;
+height: 70px;
+border-radius: 30px;
+padding: 9px;
+background-color: rgba(131, 47, 110, 0.425);
+
+}
+
+.grupo {
+    color:#ffffff;
+    background-color: #132d46c5;
+
+    border: 10px;
+    width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 50px;
+    margin: 40px;
+    }
+
+
+.grupo input {
+    width: 500px;
+    height: 40px;
+    background-color: rgba(131, 47, 110, 0.425);
+    color: #ffffff
+}
+
+.checkbox input {
+    width: 18px;
+    display:inline;
+    align-items: baseline;
+    justify-content: baseline;
+    position: relative;
+    top: 15px;
+    }
+select {
+    display: flex;
+    position: relative;
+    width: 500px;
+    height: 40px;
+    background-color: rgba(131, 47, 110, 0.425);
+}
+button{ 
+  
+    width: 300px;
+    height: 40px;
+    background-color: rgba(131, 47, 110, 0.425);
+}
+
+.checkbox strong {
+    position: relative;
+    top: 30px;
 }
