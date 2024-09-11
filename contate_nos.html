@@ -1,55 +1,84 @@
 <!DOCTYPE html>
-<html> 
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv=""X-UA-Compatible="content="te=edge">
-        <meta name=" "viewport" content=" "width= device-width, initial-scale=1.0">
-        <meta name= "description" content="consultoria de carreiras">
-        <meta name= "keywords" contet="consultorias, carreiras, profissionalizar, plano de carreiras">
-        <meta name=" "author" content="Camila Marinho, Victor Ronqui, Gustavo Yan, Gustavo Vieira">
-        <link rel="stylesheet" href="contate_nos/contate_nos.css">
-        <title> Contate-nos</title>
-    </head>
-    <body>
-        <div class="titulo">
-            <a href = "servicos.html"><button class=serviço>Serviços</button></a>
-            <a href = #><button class=fale_conosco>Fale conosco</button></a>
-            <a href = #><button class=empresa>Empresas</button></a>
-            <a href = #><button class=quem_somos>Quem somos?</button></a>
-            <a href= Login_My_Career.html><button class=entrar>Entrar</button></a>
-            <a href = #><button class=registre>Registre-se</button></a>
-            
-        </div> 
-        <div class = "contate-nos"> 
-         <div class = "contato"> <h8>CONTATE-NOS</h8>
+<html>
 
-         </div>
-         <div class = "infos">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="" X-UA-Compatible="content=" te=edge">
+    <meta name=" " viewport" content=" " width=device-width, initial-scale=1.0">
+    <meta name="description" content="consultoria de carreiras">
+    <meta name="keywords" contet="consultorias, carreiras, profissionalizar, plano de carreiras">
+    <meta name=" " author" content="Camila Marinho, Victor Ronqui, Gustavo Yan, Gustavo Vieira">
+    <link rel="stylesheet" href="contate_nos.css">
+    <title> Contate-nos</title>
+</head>
+
+<body>
+    <div class="titulo">
+
+        <div class="logo"><img src="My1.png"></div>
+        <a href=#><button class=serviço>Serviços</button></a>
+        <a href=#><button class=fale_conosco>Fale conosco</button></a>
+        <a href=#><button class=empresa>Empresas</button></a>
+        <a href=#><button class=quem_somos>Quem somos?</button></a>
+        <a href=Login_My_Career.html><button class=entrar>Entrar</button></a>
+        <a href=#><button class=registre>Registre-se</button></a>
+
+    </div>
+    <div class="contate-nos">
+        <div class="contato">
+            <h8>CONTATE-NOS</h8>
+
+        </div>
+        <div class="infos">
             <h1> Informações de contato</h1>
-            <p>Obrigado por nos contatar! <br> Entre em contato com o nosso SAC: 0800 1234 5678
-            </br> Rua Dr. Sales de Oliveira 1661 (Vila Industrial), Campinas, SP, 13035-500 <br> mycareer@sac.com.br</p>
-         
+            <p class="infocontato"> Obrigado por nos contatar! <br> Entre em contato com o nosso SAC: 0800 1234 5678
+                <br>
+                Rua Dr. Sales de Oliveira 1661 (Vila Industrial), Campinas, SP, <br> 13035-500 <br> mycareer@sac.com.br
+            </p>
 
-         <div class="formulário">
-                <label for="nome"></label>
-                <input type="text" name="nome" placeholder="  Infome seu nome">
-                <br>
-                <label for="email"></label>
-                <input type="email" name="email" placeholder="  Infome seu Email">
-                <br>
-                <label for="Telefone"></label>
-                <input type="tel" name="Telefone" placeholder="  Infome seu Telefone">
-                <br>
-                <select>
-                    <option>Selecione</option>
-                    <option>Consultoria</option>
-                    <option>Financeiro</option>
-                    <option>Dúvidas</option>
-                </select>
-                <br><br>
-                <textarea style="resize: none" placeholder="Deixe sua mensagem"></textarea>
-            </div>
-            </div>
 
-    </body>
+            <div class="formulário">
+                <form action="https://webhook.site/fb4056f4-7ed5-4705-93cd-cd7ac345fdd1">
+                    <fieldset class="grupo">
+                        <div>
+                            <p><strong> Nome completo:</strong></p>
+                            <label for="nome"></label>
+                            <input type="text" name="nome" placeholder="  Infome seu nome" required>
+
+                            <p><strong>E-mail:</strong></p>
+                            <label for="email"></label>
+                            <input type="email" name="email" placeholder="  Infome seu Email" required>
+                            <p><strong>Telefone</strong></p>
+                            <label for="Telefone"></label>
+                            <input type="tel" name="Telefone" placeholder="  Infome seu Telefone" required>
+                            <br>
+                            <br>
+
+                            <select name="motivo_contato">
+                                <option value="">Selecione</option>
+                                <option value="consultoria">Consultoria</option>
+                                <option value="financeiro">Financeiro</option>
+                                <option value="duvidas">Dúvidas</option>
+                            </select>
+                            <br><br>
+                            <textarea style="resize: none" placeholder="Deixe sua mensagem"></textarea><br>
+                            <div class="checkbox">
+                                <Label><strong>Eu sou:</strong></Label><br><br>
+                                <input type="radio" id="op1" name="option" value="Pessoa Física">
+                                <label for="op1">Pessoa Física</label>
+
+                                <input type="radio" id="op2" name="option" value="Pessoa Jurídica">
+                                <label for="op2">Pessoa Jurídica</label>
+                            </div>
+                        </div>
+
+                        <p><button type="submit">Enviar</button></p><br>
+
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+
+</body>
+
 </html>
