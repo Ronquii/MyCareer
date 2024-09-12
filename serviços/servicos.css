@@ -23,19 +23,17 @@
     color: #ffff;
 }
 .titulo {
-    background-color: #060f18;
-    position: absolute;
-    width: 1490px;
+    background-color: #1A1E29;
+    position: fixed;
+    width: 1600px;
     height: 90px;
+    z-index: 1000;
 }
 .title_card{
-    font-family:Arial, Helvetica, sans-serif;
-    font-weight: 40;
-    margin: 50px;
-    margin-left: 10px;
+    font-family: 'Poppins', sans-serif;
 }
 
-button {
+.titulo button {
     display: flexbox;
     position: relative;
     justify-content: center;
@@ -70,8 +68,10 @@ button {
     background-color: #00c48e;
 
 }
-.entrar, .registre {
-    background-color: grey;
+
+
+
+.entrar, .registre  {
     position: absolute;
     left: 1380px;
     top: 13px;
@@ -86,7 +86,7 @@ button {
     border-style: none;
     color: aliceblue;
     font-size: 17px;
-    font-weight: 100;    
+    font-weight: 100;
 }
 .entrar {
     padding: 10px;
