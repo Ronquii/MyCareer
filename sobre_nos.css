@@ -1,0 +1,78 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #008B8B; /* background color */
+}
+
+.quem-somos h1{color: #00C48E;}
+.quem-somos-desc { color: #FFFFFF;}
+
+.quem-somos {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #1A1E29;
+    border: 1px solid #6A6E79; /* border color */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: #FFFFFF;
+}
+.equipe p{ color: #FFFFFF};
+.missao p{ color: #FFFFFF};
+
+h1, h2 {
+    color: #1A1E29; /* title color */
+}
+
+.missao, .enfoque, .equipe, .filosofia, .contato, .paleta-cores {
+    margin-bottom: 20px;
+    background-color: #132D46; /* section background color */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.missao h2, .enfoque h2, .equipe h2, .filosofia h2, .contato h2 {
+    color: #00C48E; /* section title color */
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+li:before {
+    content: "\2022";
+    color: #1A1E29;
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+.paleta-cores ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.paleta-cores li {
+    margin: 10px;
+}
+
+.paleta-cores span {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+footer {
+    background-color: #1A1E29; /* footer background color */
+    padding: 20px;
+    text-align: center;
+    color: #FFFFFF; /* footer text color */
+}
