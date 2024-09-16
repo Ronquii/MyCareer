@@ -7,9 +7,9 @@ body {
 .titulo {
     background-color: #1A1E29;
     position: fixed;
-    width: 1600px;
+    width: 1800px;
     height: 90px;
-    z-index: 1000;
+    z-index: 1100;
 }
 .title_card{
     font-family: 'Poppins', sans-serif;
