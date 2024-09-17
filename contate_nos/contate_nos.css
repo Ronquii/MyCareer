@@ -1,15 +1,28 @@
 body {
-    margin: 0
+    margin: 0;
+    font-family: 'Poppins', sans-serif
     
 }
 .titulo {
-    padding-left: 500px;
-    background-color: #00010a;
-    width: 900px;
-    height: 63px;
-    
-    
-    
+    position: relative;
+    background-color: #1A1E29;
+    width: 100%;
+    height: 90px;    
+}
+.titulo button {
+    display: flexbox;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    background-color: transparent;
+    color: white;
+    border-style: none;
+    font-size: 1em;
+    margin-left: 2%;
+    left: 28%;
+    top: 30%;
+    transition: 0.6s;
 }
 .logo{
     position: absolute;
@@ -18,6 +31,7 @@ body {
     height: 50px;
     left: 4px;
     padding: 4px;
+    top: 30%
 
 }
 .serviço, .entrar, .quem_somos, .fale_conosco, .registre, .empresa, ::after {
@@ -36,12 +50,13 @@ body {
 }
 
 
-.entrar, .registre {
-    background-color: grey;
-    left: 100px;
-    display: inline-block;
+.entrar:hover, .registre:hover{
+    background-color: grey
 }
 
+button:hover{
+    background-color: #00c48e;
+}
 .contato{
     display: flex;
     align-items: center;
@@ -59,7 +74,10 @@ body {
     display: flex;
     flex-direction: column;
     float:left;
-    Font-family: Cambria;}
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    margin-left: 02%;
+}
 
     .infocontato {
     font-size: 18px;
@@ -83,6 +101,7 @@ body {
 input, select, textarea, button {
     border-radius: 20px;
     background-color: rgb(224, 229, 231);
+    border-style: none;
     
 }
 textarea {
@@ -90,14 +109,13 @@ width: 500px;
 height: 70px;
 border-radius: 30px;
 padding: 9px;
-background-color: rgba(131, 47, 110, 0.425);
-
+background-color: #ffffffad;
+border-style: none;
 }
 
 .grupo {
     color:#ffffff;
-    background-color: #132d46c5;
-
+    background-color: #9400a138;
     border: 10px;
     width: 500px;
     display: flex;
@@ -108,12 +126,17 @@ background-color: rgba(131, 47, 110, 0.425);
     margin: 40px;
     }
 
+.grupo p {
+color: rgba(0, 0, 0, 0.479);
 
-.grupo input {
+}
+
+    .grupo input {
     width: 500px;
     height: 40px;
-    background-color: rgba(131, 47, 110, 0.425);
-    color: #ffffff
+    background-color: rgba(3, 0, 165, 0.705);
+    color: white;
+    border-style: none;
 }
 
 .checkbox input {
@@ -123,22 +146,33 @@ background-color: rgba(131, 47, 110, 0.425);
     justify-content: baseline;
     position: relative;
     top: 15px;
+    color: white;
+    background-color: rgba(3, 0, 165, 0.705);
     }
+
 select {
     display: flex;
     position: relative;
     width: 500px;
     height: 40px;
-    background-color: rgba(131, 47, 110, 0.425);
+    color: white;
+    background-color: rgba(3, 0, 165, 0.705);
 }
+
 button{ 
-  
+
+    border-style: none;
     width: 300px;
     height: 40px;
-    background-color: rgba(131, 47, 110, 0.425);
+    background-color: rgba(3, 0, 165, 0.705);
 }
 
 .checkbox strong {
     position: relative;
     top: 30px;
+    color: rgba(0, 0, 0, 0.479);
+}
+
+.checkbox {
+color: rgba(0, 0, 0, 0.479);    
 }
