@@ -42,7 +42,7 @@ font-family: 'Poppins', sans-serif;
 }
 .titulo {
     background-color: #1A1E29;
-    position: relative;
+    position: fixed;
     width: 1600px;
     height: 90px;
     z-index: 1000;
@@ -63,7 +63,7 @@ font-family: 'Poppins', sans-serif;
     cursor: pointer;
     position: relative;
     font-size: 17px;
-    margin-left: 100%;
+    margin-left: 20px;
     padding: 09px;
     top: 34%;
     left: 700px;
