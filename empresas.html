@@ -1,55 +1,157 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Empresas</title>
     <link rel="stylesheet" href="empresas/empresas.css">
+    <link rel="stylesheet" href="cabeçalho.css">
+    <script src="https://kit.fontawesome.com/f42e1bf442.js" crossorigin="anonymous"></script>
+    <title>My Career</title>
 </head>
+
 <body>
     <header>
-        <nav>
-            <div class="titulo">
-                <a href = "servicos.html"><button class=serviço>Serviços</button></a>
-                <a href = "contate_nos.html"><button class=fale_conosco>Fale conosco</button></a>
-                <a href = "empresas.html"><button class=empresa>Empresas</button></a>
-                <a href = "sobre_nos.html"><button class=quem_somos>Quem somos?</button></a>
-                <a href= "Login_My_Career.html"><button class=entrar>Entrar</button></a>
-                <a href = "registre_se.html"><button class=registre>Registre-se</button></a>
+        <nav class="nav-bar">
+            <div class="logo">
+                <img src="My1.png"></img>
+            </div>
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="#" class="nav-link">Serviços</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Fale conosco</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Sobre Nós</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Empresas</a></li>
+                </ul>
+            </div>
+            <div class="login-button">
+                <button><a href="#">Entrar</a></button>
+            </div>
+
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="menu_white_36dp.svg" alt=""></button>
             </div>
         </nav>
-    </header>
-    <main>
-        <h1>Empresas</h1>
-        <section>
-            <h2>Empresas Parceiras</h2>
+        <div class="mobile-menu">
             <ul>
-                <li>
-                    <img src="Design/cryogem_logo.png" alt="Logo Empresa 1">
-                    <h3>CryoGem</h3>
-                    <p>Cryogem é uma empresa de cibersegurança dedicada a proteger dados críticos com soluções inovadoras e tecnológicas.</p>
-                </li>
-                <li>
-                    <img src="Design/supplement_logo.jpg" alt="Logo Empresa 2">
-                    <h3>Supplement</h3>
-                    <p>A Supplement é uma empresa especializada em oferecer suplementos de alta qualidade para potencializar a saúde e o desempenho físico.</p>
-                </li>
-                <li>
-                    <img src="Design/agrostore_logo.jpg" alt="Logo Empresa 3">
-                    <h3>AgroStore</h3>
-                    <p>A AgroStore é uma empresa dedicada a fornecer soluções integradas para o agronegócio, desde insumos até tecnologias inovadoras.</p>
-                </li>
-                <li>
-                    <img src="Design/jeffsburguer_logo.jpg" alt="Logo Empresa 4">
-                    <h3>Jeff's Burguer</h3>
-                    <p>A Jeff's Burger é uma rede de hamburguerias que se destaca pela qualidade e sabor inigualáveis dos seus hambúrgueres artesanais.</p>
-                </li>
-                <!-- Adicione mais empresas aqui -->
+                <li class="nav-item"><a href="servicos.html" class="nav-link">Serviços</a></li>
+                <li class="nav-item"><a href="faleconosco.html" class="nav-link">Fale conosco</a></li>
+                <li class="nav-item"><a href="sobre_nos.html" class="nav-link">Sobre Nós</a></li>
+                <li class="nav-item"><a href="empresas.html" class="nav-link">Empresas</a></li>
             </ul>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2024 MyCareer</p>
-    </footer>
+
+            <div class="login-button">
+                <button><a href="#">Entrar</a></button>
+            </div>
+        </div>
+    </header>
+    <div class="Card-home">
+
+        <h3>SEJA UM PARCEIRO</h3>
+        <h4>SEJA UM PARCEIRO</h4>
+
+    </div>
+    <div class="infos">
+
+        <div class="text">
+            <p>
+                <mark>Na My Career acreditamos que o sucesso profissional é constituido com
+                    parceirias fortes e uma visão compartilhada de crescimento. Estamos à procura
+                    de empresas que compartilhem nossa paixão por desenvolvimento de talentos
+                    e inovação na carreira.</mark>
+            </p>
+        </div>
+
+        <div class="green-card">
+            <article>
+                <p class="gd-font">
+                    Por que se juntar a nós?
+                </p>
+                <p class="gd-lista-um">
+                    • Impacto Conjunto: Trabalhando juntos, podemos
+                    proporcionar oportunidades excepcionais para
+                    profissionais de todo o mundo, impulsionando suas
+                    carreiras para novos patamares.
+                    <br>
+                    • Inovação e Crescimento: Combinando nossas expertise em
+                    alavancagem de carreira com a sua experiência no
+                    mercado, podemos criar soluções inovadoras que
+                    beneficiam tanto os profissionais quanto as empresas.<br>
+                    • Rede de Contatos: Conecte-se com uma comunidade
+                    vibrante de empresas e profissionais dedicados ao
+                    desemvolvimento continuo de suas habilidades e carreiras.
+                </p>
+            </article>
+        </div>
+        <div class="imgLado">
+            <img src="design/imgTRES.png"></img>
+        </div>
+        <div class="green-card-dois">
+            <article class="gcd-article-dois">
+                <p class="gd-font-dois">
+                    Como Podemos Colaborar:
+                </p>
+                <p class="gd-lista-dois">
+                    • Programas de desenvolvimento: Crie e ofereça
+                    programas de treinamento e capacitação que atendam
+                    às necessidades especificas do mercado.<br>
+                    • Parcerias Educacionais: Colabore conosco para
+                    oferecer cursos e certificações que preparem os
+                    profissionais para os desafios do futuro.<br>
+                    • Oportunidades de Recrutamento: Acesse uma rede de
+                    talentos qualificados, prontos para agregar valor à sua
+                    empresa.<br>
+                    • Eventos e Workshops: Participe de eventos de
+                    networking, workshops e conferências que promovem o
+                    crescimento e a inovação.<br>
+                </p>
+            </article>
+        </div>
+        <div class="imgdois">
+            <img src="design/imagemUM.png"></img>
+        </div>
+
+        <h1 class="parc"><mark> Empresas Parceiras </mark></h1>
+
+        <div class="green-card-tres">
+            <article class="gcd-article-tres">
+                <p class="gd-font-dois">
+                    Entre em Contato:
+                </p>
+                <p class="gd-lista-tres">
+                    • Estamos entusiasmados para explorar como
+                    podemos trabalhar juntos. Se a sua empresa
+                    está interessada em fazer parte dessa jornada
+                    de transformação, entre em contato conosco e
+                    descubra como podemos construir um futuro
+                    promissor, lado a lado.
+                </p>
+            </article>
+            <div class="imgtres">
+                <img src="design/imgDOIS.png"></img>
+            </div>
+        </div>
+        <div class="parceiros">
+            <div class="p1">
+                <img src="design/alura.jpg"></img>
+                <hr>
+                <h1> Alura </h1>
+                <p> A missão da Alura é transformar a vida pessoal e profissional das pessoas através
+                    da educação e da tecnologia. Para chegar nesse objetivo, nossas ações diárias e
+                    projetos são guiados por alguns valores que são considerados essenciais por todo
+                    mundo que trabalha com a gente.</p>
+            </div>
+            <div class="p2">
+                <img src="design/estacio.jpg"></img>
+                <hr>
+                <h1> Estácio </h1>
+                <p> A missão da Integramos academia e gestão para oferecer uma educação transformadora
+                    ao maior número de pessoas, criando impacto positivo para a sociedade.</p>
+            </div>
+        </div>
+    </div>
+    <script src="menu.js"></script>
 </body>
+
 </html>
