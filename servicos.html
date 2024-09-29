@@ -1,32 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="serviços/servicos.css">  
+    <link rel="stylesheet" href="serviços/servicos.css">
+    <link rel="stylesheet" href="cabeçalho.css">
     <script src="https://kit.fontawesome.com/f42e1bf442.js" crossorigin="anonymous"></script>
     <title>My Career</title>
 </head>
 
 <body>
+    <header>
+        <nav class="nav-bar">
+            <div class="logo">
+                <img src="My1.png"></img>
+            </div>
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="servicos.html" class="nav-link">Serviços</a></li>
+                    <li class="nav-item"><a href="faleconosco.html" class="nav-link">Fale conosco</a></li>
+                    <li class="nav-item"><a href="sobre_nos.html" class="nav-link">Sobre Nós</a></li>
+                    <li class="nav-item"><a href="empresas.html" class="nav-link">Empresas</a></li>
+                </ul>
+            </div>
+            <div class="login-button">
+                <button><a href="#">Entrar</a></button>
+            </div>
 
-    <div class ="main">
-        <div class="titulo">
-            <a href="#"><button class="serviço">Serviços</button></a>
-            <a href="contate_nos.html"><button class="fale_conosco">Fale conosco</button></a>
-            <a href="empresas.html"><button class="empresas">Empresas</button></a>
-            <a href="sobre_nos.html"><button class="quem_somos">Quem somos?</button></a>
-            <a href="Login_My_Career.html"><button class="entrar">Entrar</button></a>
-            <a href="registre_se.html"><button class="registre">Registre-se</button></a>
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="menu_white_36dp.svg" alt=""></button>
+            </div>
+        </nav>
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="#" class="nav-link">Serviços</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Fale conosco</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Sobre Nós</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Empresas</a></li>
+            </ul>
+
+            <div class="login-button">
+                <button><a href="#">Entrar</a></button>
+            </div>
         </div>
-     <div class="Card-home">
-        
+    </header>
+    <div class="Card-home">
+
         <h3>CONHEÇA NOSSOS SERVIÇOS</h3>
 
-        </div>
-        <div class = "infos">
-
+    </div>
+    <div class="infos">
         <div class="green-card">
             <article>
                 <p class="gd-font">
@@ -40,12 +65,12 @@
                 </p>
             </article>
         </div>
+
         <div class="green-card-dois">
             <article class="gcd-article-dois">
                 <p class="gd-font-dois">
                     Mentoria e Coaching Profissional:
                 </p>
-                <br><br>
                 <p class="gd-lista-dois">
                     • Sessões de coaching individual para desenvolver habilidades específicas.<br>
                     • Mentoria contínua para ajudar a alcançar metas de carreira.<br>
@@ -79,6 +104,7 @@
             </article>
         </div>
     </div>
+    <script src="menu.js"></script>
 </body>
 
 </html>
