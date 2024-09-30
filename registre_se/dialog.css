@@ -1,5 +1,5 @@
 h1{
-    color: black;
+    color: #ffffff;
 }
   
   button {
@@ -14,35 +14,46 @@ h1{
   }
   
   #open-modal {
-    background-color: #096a57;
+    background-color: #00ffb7;
+    color: #373a80;
+    font-weight:500;
   }
 
   #close-modal{
     font-size: 20px;
     background-color: transparent;
-    color: black;
+    color: #eee;
+    padding: 10px;
   }
 
   #close-modal:hover{
     background-color: #096a57;
     color: #fff;
+    transition: 0.9s;
+    border-radius: 100%;
+    scale: 1.2;
   }
   
   #save-modal{
-    padding-left: 29%;
-    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
   }
 
   .save-modal:hover{
     background-color: #096a57;
     color: #fff;
+    transition: 0.5s;
+    scale: 1.1;
+    border-radius: 30px;
+
   }
   .save-modal{
     font-size: 20px;
-    width: 160px;
-    height: 30px;
+    height: 50px;
     background-color: transparent;
-    color: black;
+    color: #eee;
   } 
 
   button:hover {
@@ -65,10 +76,10 @@ h1{
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    width: 400px;
-    height: 500px;
+    width: 36%;
+    height: 80%;
     max-width: 90%;
-    background-color: #fff;
+    background-color: #122135;
     padding: 1.2rem;
     border-radius: 0.5rem;
     z-index: 10;
@@ -92,16 +103,25 @@ h1{
   }
   
   .form {
-    padding-left: 11%;
-    padding-top: 50px;
+    display: flex;
+    margin-top: 40px;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
   }
-  
   .form label{
-    color: black;
+    display: flex;
+    align-items: first baseline;
+    padding: 0px;
+    height: 5vh;
+  }
+  .form input{
+    color: #eee;
+    margin: 2px;
+    width: 35vw;
   }
   
-  #modal.hide,
-  #fade.hide {
+  #modal.hide, #fade.hide {
     opacity: 0;
     pointer-events: none;
   }
