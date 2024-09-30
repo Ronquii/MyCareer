@@ -1,289 +1,131 @@
-body {
-    margin: 0;
+h1{
+    color: #ffffff;
 }
+  
+  button {
+    padding: 0.1rem .6rem;
+    background-color: #888;
+    color: #fff;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    opacity: 0.9;
+    font-size: 15px;
+  }
+  
+  #open-modal {
+    background-color: #00ffb7;
+    color: #373a80;
+    font-weight:500;
+  }
 
-.main-login {
-    width: 100vw;
-    height: 100vh;
+  #close-modal{
+    font-size: 20px;
+    background-color: transparent;
+    color: #eee;
+    padding: 10px;
+  }
+
+  #close-modal:hover{
+    background-color: #096a57;
+    color: #fff;
+    transition: 0.9s;
+    border-radius: 100%;
+    scale: 1.2;
+  }
+  
+  #save-modal{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url("https://c.pxhere.com/photos/7d/4a/milky_way_starry_sky_night_sky_star_night_sky_space_cosmos-1438751.jpg!d");
-    background-size: cover;
-    position: relative;
-    z-index: 1;
-    background-blend-mode: multiply;
+    margin: 1.2rem;
+  }
 
+  .save-modal:hover{
+    background-color: #096a57;
+    color: #fff;
+    transition: 0.5s;
+    scale: 1.1;
+    border-radius: 30px;
 
-}
+  }
+  .save-modal{
+    font-size: 20px;
+    width: 100vw;
+    background-color: transparent;
+    color: #eee;
 
-.main-login::after {
-    content: '';
-    background-color: #0c0e13;
-    position: absolute;
+  } 
+
+  button:hover {
+    opacity: 1;
+  }
+  
+  #fade {
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
-    left: 0;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(5px) ;
+    z-index: 5;
+  }
+  
+  #modal {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 36%;
+    max-width: 90%;
+    background-color: #122135;
+    padding: 1.2rem;
+    border-radius: 0.5rem;
+    z-index: 10;
+  }
+  
+  #fade,
+  #modal {
+    transition: 0.5s;
+    opacity: 1;
+    pointer-events: all;
+  }
+  
+  .modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    top: 1;
+  }
+  
+  .form {
+    display: flex;
+    margin-top: 40px;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .form label{
+    display: flex;
+    align-items: first baseline;
+    padding: 0px;
+    height: 5vh;
+  }
+  .form input{
+    color: #eee;
+    margin: 2px;
+    width: 35vw;
+  }
+  
+  #modal.hide, #fade.hide {
+    opacity: 0;
+    pointer-events: none;
+  }
+  
+  #modal.hide {
     top: 0;
-    opacity: 0.94;
-    z-index: -1;
-}
-
-.left-login {
-    width: 50vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.left-login>h1 {
-    display: flex;
-    position: relative;
-    justify-content: center;
-    top: 70px;
-    color: #ffffff;
-    font-size: 50px;
-    font-family: sans-serif;
-    font-weight: 700;
-    width: 100%;
-}
-
-.left-login>h2 {
-    display: flex;
-    position: relative;
-    justify-content: center;
-    bottom: 70px;
-    color: #ffffff;
-    font-size: 50px;
-    font-family: sans-serif;
-    font-weight: 700;
-    width: 100%;
-}
-
-.right-login {
-    position: block;
-    width: 40vw;
-    height: 100vh;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-}
-
-.card-login {
-    width: 20vw;
-    display: flex;
-    position: block;
-    align-items: center;
-    flex-direction: column;
-    padding: 20px 30px;
-    background: #132d46;
-    border: 40px solid;
-    border-color: #122135;
-    border-radius: 120px;
-    font-family: Calibri, sans-serif;
-    z-index: 1;
-}
-
-.card-login>h1 {
-    color: rgb(225, 222, 222);
-    display: block;
-    position: relative;
-    font-size: 40px;
-    top: -20px;
-}
-
-.textfield1 {
-    display: flex;
-    position: relative;
-    justify-content: center;
-    flex-direction: column;
-    color: rgb(255, 255, 255);
-    top: -10px;
-}
-
-.textfield1>label {
-    display: flex;
-    position: relative;
-    justify-content: center;
-    flex-direction: column;
-    color: rgb(255, 255, 255);
-    top: -10px;
-}
-
-.textfield2>label {
-    display: flex;
-    position: relative;
-    justify-content: center;
-    flex-direction: column;
-    color: rgb(255, 255, 255);
-    top: -5px;
-}
-
-.lbr_senha {
-    position: relative;
-}
-.lbr_senha input {
-    cursor: pointer;
-}
-
-.textfield1>input {
-    width: 20vw;
-    height: 6vh;
-    border: none;
-    border-radius: 60px;
-    background: #373a80;
-    font-size: 12pt;
-    border: #0c0e13;
-    border-style: solid;
-    border-width: 1px;
-
-}
-
-.textfield2>input {
-    width: 20vw;
-    height: 6vh;
-    border: none;
-    border-radius: 60px;
-    background: #373a80;
-    font-size: 12pt;
-    border: #0c0e13;
-    border-style: solid;
-    border-width: 1px;
-}
-
-.btn-login {
-    width: 15vw;
-    height: 6vh;
-    border-radius: 50px;
-    position: relative;
-    top: 3vb;
-    font-size: 4vb;
-    font-weight: 700;
-    background-color: #00ffb7;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-.btn-login a {
-    color: #373a80;
-    text-decoration: none;
-}
-.lbr_senha {
-    display: flex;
-    position: relative;
-    top: 10px;
-    right: 3vw;
-    color: #ffffff;
-}
-
-.recovery {
-    position: relative;
-    left: 6vw;
-    font-weight: 500;
-}
-.recovery label{
-    cursor: pointer;
-}
-
-.Conta {
-    display: flex;
-    position: relative;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    top: 5vb;
-    color: rgb(255, 255, 255);
-    font-size: 90%;
-    font-family: sans-serif;
-    font-weight: 600;
-}
-.crconta {
-    display: flex;
-    position: relative;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-.aguia{
-    width: 30%;
-	z-index:0;
-	position: absolute;
-	opacity: 0.6;}
-
-.linhas{
-	z-index: 0;
-	position: relative;
-	opacity: 0.6;
-	width: 100%;
-	height: 100%;
-	left: 80%;
-}
-
-@media screen and (max-width: 981px) and (min-width: 500px){
-    .left-login{
-        display: none;
-    }
-    .right-login{
-        display: flex;
-        justify-self: center;
-        align-items: center;
-        width: 60%;
-    }
-    .card-login {
-        display: relative;
-        border-radius: 100px;
-        width: 100%;
-        }
-    .linhas{
-        display: none;
-    }
-    .Conta{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 100;
-    }
-    .textfield1 input {
-        width: 40vw;
-    }
-    .textfield2 input{
-        width: 40vw;
-    }
-    .btn-login{
-        width: 100%;
-        font-size: 20px;
-        height: 40px;
-    }
-
-}  
-@media screen and (max-width: 500px){
-    .card-login{
-     width:80%;
-    }
-    .right-login{
-        width: 80%;
-      }
-    .left-login{
-        display: none;
-    }
-    .linhas{
-        display: none;
-    }
-    .textfield1 > input {
-        width: 100%;
-    }
-    .textfield2 input {
-        width: 100%;
-    }
-    .btn-login{
-        width: 100%;
-    }
-    .Conta label{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-    }
-}
+  }
