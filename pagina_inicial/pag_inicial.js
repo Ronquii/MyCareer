@@ -1,25 +1,40 @@
-const carousel = document.querySelector('.carousel');
-const boxes = document.querySelectorAll('.box');
-const prevButton = document.querySelector('.prev');
-const nextButton = document.querySelector('.next');
+// Selecionando os elementos do modal
+const modal = document.getElementById('modal');
+const openModalBtn = document.getElementById('qr_conhecer');
+const closeModalBtn = document.querySelector('.close');
 
-let currentIndex = 0;
+// Páginas do modal
+const page1 = document.getElementById('page1');
+const page2 = document.getElementById('page2');
+const nextPageBtn = document.getElementById('nextPage');
 
-function showBox(index) {
-  const boxWidth = boxes[0].offsetWidth;
-  carousel.style.transform = `translateX(${-index * boxWidth}px)`;
-}
-
-nextButton.addEventListener('click', () => {
-  if (currentIndex < boxes.length - 1) {
-    currentIndex++;
-    showBox(currentIndex);
-  }
+// Abrindo o modal
+openModalBtn.addEventListener('click', () => {
+    modal.style.display = 'flex';
 });
 
-prevButton.addEventListener('click', () => {
-  if (currentIndex > 0) {
-    currentIndex--;
-    showBox(currentIndex);
-  }
+// Fechando o modal
+closeModalBtn.addEventListener('click', () => {
+    modal.style.display = 'none';
+    resetModal();
+});
+
+// Mudando para a Página 2
+nextPageBtn.addEventListener('click', () => {
+    page1.style.display = 'none';
+    page2.style.display = 'block';
+});
+
+// Resetando o modal para a Página 1 ao fechar
+function resetModal() {
+    page1.style.display = 'block';
+    page2.style.display = 'none';
+}
+
+// Fechando o modal ao clicar fora dele
+window.addEventListener('click', (event) => {
+    if (event.target === modal) {
+        modal.style.display = 'none';
+        resetModal();
+    }
 });
