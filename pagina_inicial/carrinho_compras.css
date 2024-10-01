@@ -4,6 +4,7 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: 'Inter', sans-serif;
 }
 
 body {
@@ -14,7 +15,6 @@ body {
 header {
     background-color: #24252a;
     box-shadow: 0px 3px 10px #464646;
-    color: white;
 }
 
 .nav-bar {
