@@ -171,3 +171,66 @@ select {
     }
 
 }
+
+@media only screen and (max-width: 400px) and (min-width: 100px) {
+
+    .formElement,
+    .grupo,
+    .formulário {
+        width: 100px;
+        position: relative;
+        height: 180vw;
+    }
+
+    .formElement>input,
+    .formElement>select,
+    .formElement>textarea {
+        width: 250px;
+        position: relative;
+    }
+
+    .grupo {
+        right: 9vw;
+        top: -220px;
+    }
+
+    .checkbox {
+        width: 35vw;
+    }
+
+    .formElement {
+        right: 19vw;
+    }
+
+    .formulário {
+        right: 10vw;
+    }
+
+    .formElement>textarea {
+        right: 2vw;
+    }
+
+    form {
+        padding: 0;
+    }
+
+    .infos {
+        top: 200vw;
+        width: 99%;
+        height: 90vw;
+    }
+
+    .infos>h1 {
+        padding: 0;
+        left: 7vw;
+        font-weight: 300
+    }
+
+    .infos>p {
+        top: 15vw;
+        position: relative;
+        padding: 2%;
+        font-size: x-large;
+    }
+
+}
