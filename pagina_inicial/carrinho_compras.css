@@ -23,7 +23,7 @@ header {
     padding: 1.5rem 3rem;
 }
 
-.logo img {
+.card_logo img {
     display: flex;
     align-items: center;
     width: 2cap;
