@@ -235,6 +235,7 @@ mark {
     display: none;
 }
 
+
 @media only screen and (max-width: 730px) {
 
     .Card-home>h3 {
@@ -309,4 +310,99 @@ mark {
         top: 1000px;
     }
 
+}
+
+@media only screen and (max-width: 400px) and (min-width: 100px) {
+
+    .Card-home>h4 {
+        font-size: 20vw;
+        position: relative;
+        right: 9%;
+        top: 2%;
+    }
+
+    .text {
+        font-size: 7vw;
+    }
+
+    .green-card {
+        height: 125%;
+    }
+
+    .gd-lista-um {
+        padding-top: 10%;
+    }
+
+    .green-card-dois {
+        top: 220vw;
+        height: 235vw;
+    }
+
+    .gd-font-dois,
+    .gd-lista-dois,
+    .gd-lista-tres {
+        padding-left: 3vw;
+        padding-right: 3vw;
+    }
+
+    .green-card-tres {
+        top: 240vw;
+        height: 133vw;
+        right: 8vw;
+    }
+
+    .parc,
+    .parc>mark {
+        display: none;
+    }
+
+    .parceiros {
+        display: flexbox;
+        height: 270vw;
+        top: 300vw;
+    }
+
+    .parceiros>h3 {
+        position: relative;
+        top: -30vw;
+        margin-left: 17vw;
+        font-size: 7vw;
+        color: white;
+        background-color: #132d46;
+        margin-right: 16vw;
+    }
+
+    .p1>img {
+        top: 10vw;
+        left: 20vw;
+    }
+
+    .p1>h1 {
+        top: 70vw;
+        right: 15vw;
+    }
+
+    .p1>p {
+        top: 30vw;
+        right: 13vw;
+        position: relative;
+        padding: 0;
+    }
+
+    .p2>img {
+        top: 43vw;
+        left: 20vw;
+    }
+
+    .p2>h1 {
+        top: 200vw;
+        right: 15vw;
+    }
+
+    .p2>p {
+        top: 65vw;
+        right: 13vw;
+        position: relative;
+        padding: 0;
+    }
 }
