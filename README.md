@@ -1,5 +1,5 @@
 # MyCareer
-Integrantes: Camila (202402393839), Gustavo Vieira (202402395246), Victor (202402392905) e Gustavo Yan (202404410196)
+Integrantes: Camila (202402393839), Victor (202402392905) e Gustavo Yan (202404410196)
 
 ////////////////////////////////////////
 
