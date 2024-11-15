@@ -235,8 +235,165 @@ mark {
     display: none;
 }
 
+@media only screen and (max-width: 1280px){
 
-@media only screen and (max-width: 730px) {
+    .green-card{
+        display: flex;
+        height: 80%;
+    }
+
+    .gd-lista-um{
+        padding-top: 5%;
+    }
+
+    .imgLado>img{
+      left: 53%;
+      padding: 0px;
+    }
+
+    .green-card-dois{
+        right: 4%;
+    }
+
+    .green-card-dois {
+        height: 45vw;
+        display: flex;
+    }
+
+    .imgtres>img{
+       left: 125%;
+    }
+}
+
+@media only screen and (max-width: 1180px){
+
+    .imgLado>img{
+        width: 50%;
+        height: 50%;
+        padding-top: 10%;
+        left: 49%;
+      }
+
+    .green-card-dois{
+        right: 10%;
+        position: relative;
+        margin-top: 15%;
+        height: 50vw;
+    }
+
+    .parc{
+        top: 360%;
+    }
+
+    .green-card-tres{
+        height: 30vw;
+    }
+
+    .imgtres>img{
+        width: 80%;
+        height: 30vw;
+    }
+
+}
+
+@media screen and (max-width: 1110px) {
+
+    .Card-home>h3{
+        left: 10%;
+    }
+
+    .green-card{
+        height: 87%;
+    }
+
+    .green-card-dois{
+        right: 17%;
+        height: 70vw;
+        top: 10vw;
+    }
+
+    .imgdois>img{
+        height: 50vw;
+        bottom: 20vw;
+    }
+
+    .green-card-tres,
+    .imgtres>img{
+        bottom: 30vw;
+    }
+
+    .parc{
+        top: 390%;
+    }
+
+    hr{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 980px){
+    .imgdois,
+    .imgLado,
+    .imgtres {
+        display: none;
+    }
+
+    .green-card{
+        left: 15%;
+        width: 50%;
+    }
+
+    .green-card-dois{
+        top: 70vw;
+        width: 50%;
+        right: 54%;
+    }
+
+    .green-card-tres{
+        top: 85vw;
+        left: 15%;
+        width: 50%;
+        height: 40vw;
+    }
+
+    .parc{
+        top: 385%;
+        left: 35%;
+    }
+
+    .parceiros{
+        top: 320vw;
+    }
+}
+
+@media only screen and (max-width: 880px){
+
+    .Card-home>h3{
+        font-size: 90px;
+    }
+
+    .green-card-dois{
+        width: 52%;
+        right: 63%;
+        top: 76vw;
+        height: 75vw;
+    }
+
+    .green-card-tres{
+        top: 85vw;
+    }
+
+    .parc{
+        top: 370%;
+    }
+
+    .parceiros{
+        top: 350vw;
+    }
+
+}
+
+@media only screen and (max-width: 780px) {
 
     .Card-home>h3 {
         display: none;
@@ -265,42 +422,27 @@ mark {
         top: 120px;
     }
 
-    .imgdois,
-    .imgLado,
-    .imgtres,
-    hr {
-        display: none;
-    }
-
     .green-card {
-        width: 80%;
+        width: 70%;
         height: 70%;
-        right: 8%;
+        left: 10%;
     }
 
     .green-card-dois {
-        margin-left: 10%;
-        width: 80%;
-        height: 65%;
-        top: 550px;
+        width: 70%;
+        height: 70vw;
+        right: 80%;
     }
 
     .green-card-tres {
-        height: 350px;
-        width: 80%;
-        top: 620px;
-        right: 1%;
+        height: 45vw;
+        width: 70%;
+        left:   10%;
     }
 
     .parc {
-        top: 1200px;
-        position: relative;
-        left: 0;
-    }
-
-    .parc>mark {
-        padding-left: 30%;
-        padding-right: 30%;
+        top: 360vw;
+        left: 30vw;
     }
 
     .parceiros {
@@ -312,48 +454,99 @@ mark {
 
 }
 
-@media only screen and (max-width: 400px) and (min-width: 100px) {
-
-    .Card-home>h4 {
-        font-size: 20vw;
-        position: relative;
-        right: 9%;
-        top: 2%;
-    }
-
-    .text {
-        font-size: 7vw;
-    }
+@media only screen and (max-width: 680px){
 
     .green-card {
-        height: 125%;
-    }
-
-    .gd-lista-um {
-        padding-top: 10%;
+        height: 80%;
+        left: 0%;
     }
 
     .green-card-dois {
-        top: 220vw;
-        height: 235vw;
+        top: 95vw;
+        height: 85vw;
+        right: 98%;
     }
-
-    .gd-font-dois,
-    .gd-lista-dois,
-    .gd-lista-tres {
-        padding-left: 3vw;
-        padding-right: 3vw;
-    }
-
+    
     .green-card-tres {
-        top: 240vw;
-        height: 133vw;
-        right: 8vw;
+        height: 55vw;
+        left: 2%;
+        top: 100vw;
     }
 
-    .parc,
-    .parc>mark {
-        display: none;
+    .parc{
+        top: 360%;
+    }
+
+}
+
+@media only screen and (max-width: 580px){
+
+    .green-card {
+        height: 95%;
+        left: 0%;
+    }
+
+    .green-card-dois {
+        top: 135vw;
+        height: 115vw;
+        right: 115%;
+    }
+    
+    .green-card-tres {
+        height: 65vw;
+        left: 2%;
+        top: 155vw;
+    }
+
+    .parc{
+        top: 400%;
+    }
+
+    .parceiros{
+        top: 220vw;
+        height: 130vw;
+    }
+
+    .p1>img{
+        top:10vw;
+    }
+
+    .p2>p{
+        top: 90vw;
+    }
+
+    .p2>img{
+        top:40vw;
+    }
+}
+
+@media only screen and (max-width: 530px){
+
+    .Card-home>h4 {
+        padding-left: 0;
+        margin: 0;
+        left: 10vw;
+        font-size: 10vw;
+    }
+
+    .green-card {
+        height: 110%;
+    }
+
+    .green-card-dois {
+        right: 140%;
+        height: 175vw;
+        top: 190vw;
+    }
+
+    .green-card-tres{
+        top: 210vw;
+        height: 95vw;
+    }
+
+    .parc{
+        top: 460%;
+        left: 10vw;
     }
 
     .parceiros {
@@ -361,17 +554,6 @@ mark {
         height: 270vw;
         top: 300vw;
     }
-
-    .parceiros>h3 {
-        position: relative;
-        top: -30vw;
-        margin-left: 17vw;
-        font-size: 7vw;
-        color: white;
-        background-color: #132d46;
-        margin-right: 16vw;
-    }
-
     .p1>img {
         top: 10vw;
         left: 20vw;
@@ -405,4 +587,152 @@ mark {
         position: relative;
         padding: 0;
     }
+}
+
+@media only screen and (max-width: 440px){
+
+    .Card-home>h4 {
+        font-size: 10vw;
+        position: relative;
+        top: 2%;
+    }
+
+    .text {
+        font-size: 7vw;
+    }
+
+    .green-card {
+        height: 125%;
+    }
+
+    .gd-lista-um {
+        padding-top: 10%;
+    }
+
+    .green-card-dois {
+        top: 230vw;
+        height: 235vw;
+        right: 150%;
+    }
+
+    .gd-font-dois,
+    .gd-lista-dois,
+    .gd-lista-tres {
+        padding-left: 3vw;
+        padding-right: 3vw;
+    }
+
+    .green-card-tres {
+        top: 240vw;
+        height: 133vw;
+        right: 8vw;
+    }
+
+    .parc{
+        top: 900vw;
+    }
+
+    .parceiros {
+        display: flexbox;
+        height: 270vw;
+        top: 300vw;
+    }
+
+    .p1>img {
+        top: 10vw;
+        left: 20vw;
+    }
+
+    .p1>h1 {
+        top: 52vw;
+        right: 20vw;
+    }
+
+    .p1>p {
+        top: 30vw;
+        right: 13vw;
+        position: relative;
+        padding: 0;
+    }
+
+    .p2>img {
+        top: 43vw;
+        left: 20vw;
+    }
+
+    .p2>h1 {
+        top: 170vw;
+        right: 18vw;
+    }
+
+    .p2>p {
+        top: 65vw;
+        right: 13vw;
+        position: relative;
+        padding: 0;
+    }
+}
+
+@media only screen and (max-width: 400px){
+    .green-card-dois {
+        top: 260vw;
+        right: 180%;
+    }
+
+    .green-card-tres{
+        top: 280vw;
+    }
+
+    .parc{
+        top: 1000vw;
+    }
+
+    .parceiros{
+        top: 400vw;
+    }
+
+    .p1>h1{
+        top: 58vw;
+    }
+    .p2>h1{
+        top: 200vw;
+    }
+
+}
+
+@media only screen and (max-width: 360px){
+    
+    .green-card-dois{
+        top: 285vw;
+        right: 200%;
+    }
+
+    .green-card-tres{
+        top: 310vw;
+    }
+
+    .parc{
+        top: 1010vw;        
+    }
+
+    .parceiros{
+        height: 300vw;
+    }
+
+    .p2>h1{
+        top: 215vw;
+    }
+
+}
+
+@media only screen and (max-width: 320px){
+
+    .parc{
+        top: 1030vw;
+    }
+
+    .p2>h1{
+        top: 225vw;
+    }
+
 }
