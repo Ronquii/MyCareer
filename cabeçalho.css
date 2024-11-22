@@ -56,13 +56,11 @@ header {
     transition: 0.3s;
 }
 
-.login-button a {
-    border: none;
+.login-button>a{
     padding: 10px 15px;
     border-radius: 5px;
     background-color: #aaa;
     text-decoration: none;
-    color: #fff;
     font-weight: 500;
     font-size: 1.1rem;
 }
