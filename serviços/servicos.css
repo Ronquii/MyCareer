@@ -123,40 +123,97 @@
     display: none;
 }
 
+@media only screen and (max-width: 1920px) and (min-width: 1680px){
 
-@media only screen and (max-width: 730px) {
-
-    .Card-home>h3 {
-        font-size: 15vw;
-        left: 19%;
-        top: 1%;
+    .green-card-dois, .green-card-quatro{
+        left: 15%;
     }
 
+}
+
+@media only screen and (max-width: 1679px) and (min-width: 1380px){
+
+    .green-card-dois, .green-card-quatro{
+        left: 5%;
+    }
+
+}
+
+@media only screen and (max-width: 1318px){
+
+    .Card-home>h3{
+        font-size: 7vw;
+    }
+
+    .green-card-dois, .green-card-quatro{
+        left: -10%;
+    }
+
+}
+
+@media only screen and (max-width: 1260px){
+
+    .gd-font, .gd-font-dois {
+        font-size: 2vw;
+        padding-top: 3%;
+    }
+
+    .gd-lista-um{
+        font-size: 2vh;
+        top: 28%;
+    }
+    
+    .gd-lista-dois, .gd-lista-tres, .gd-lista-quatro{
+        font-size: 2vh;
+        padding-top: 8%;
+    }
+
+}
+
+@media only screen and (max-width: 1060px) {
+    
+    .green-card-dois, .green-card-quatro{
+        left: -20%;
+    }
+
+}
+
+@media only screen and (max-width: 940px) {
+    
+    .green-card-dois, .green-card-quatro{
+        left: -30%;
+    }
+
+}
+
+@media only screen and (max-width: 835px) {
+    
+    .green-card-dois, .green-card-quatro{
+        left: -36%;
+    }
+
+}
+
+@media only screen and (max-width: 773px) {
+    
     .green-card {
         width: 80%;
-        height: 45%;
+        height: 25%;
     }
 
-    .gd-font {
-        left: 20px;
-        padding-top: 10px;
+    .gd-lista-um{
+        top: 40%;
     }
 
-    .gd-lista-um {
-        margin-top: 50px;
-        left: 20px;
+    .gd-font, .gd-font-dois {
+        font-size: 3vh;
     }
-
+    
     .green-card-dois {
-        margin-left: 10%;
+        margin-left: 45%;
         width: 80%;
         height: 65%;
-        top: 400px;
-    }
-
-    .gd-font-dois {
-        left: 10px;
-        padding-top: 10px;
+        top: 300px;
     }
 
     .gd-lista-dois {
@@ -166,42 +223,62 @@
     }
 
     .green-card-tres {
-        height: 350px;
-        top: 410px;
+        height: 20%;
+        top: 370px;
         width: 80%;
     }
 
-    .gd-lista-tres {
-        margin-top: 40px;
-        left: 8px;
+    .gd-lista-tres{
+        padding-bottom: 25px;
+        padding-top: 2%;
     }
 
     .green-card-quatro {
-        margin-left: 10%;
         width: 80%;
-        height: 350px;
-        top: 450px;
-        position: relative;
+        height: 22%;
+        top: 1600px;
+        left: -88%;
+        padding-bottom: 25px;
     }
 
     .gd-lista-quatro {
-        margin-top: 40px;
+        padding-top: 2%;
         left: 10px;
+        padding-bottom: 50px;
     }
 }
 
-@media only screen and (max-width: 400px) and (min-width: 100px) {
+@media only screen and (max-width: 700px) {
 
-    .Card-home>h3 {
-        font-size: 15vw;
-        right: 9%;
-        top: 2%;
-        width: 0;
+.green-card-quatro {
+    left: -98%;
+}
+
+}
+
+@media only screen and (max-width: 640px) {
+
+    .green-card-quatro {
+        left: -115%;
     }
+    
+}
+
+@media only screen and (max-width: 560px) {
+
+    .green-card-quatro {
+        left: -135%;
+        height: 28%;
+    }
+    
+}
+    
+
+@media only screen and (max-width: 480px) {
 
     .green-card {
-        right: 8vw;
-        height: 128vw;
+        height: 80vw;
+        left: -3vw;
     }
 
     .gd-lista-um {
@@ -223,20 +300,67 @@
     }
 
     .green-card-dois {
-        left: 1vw;
-        height: 141vw;
-        top: 138vw;
+        left: -33vw;
+        height: 60vw;
+        top: 100vw;
     }
 
     .green-card-tres {
-        top: 138vw;
+        top: 112vw;
         right: 8vw;
-        height: 158vw;
+        height: 70vw;
     }
 
     .green-card-quatro {
-        top: 148vw;
-        left: 1vw;
-        height: 148vw;
+        top: 428vw;
+        left: -150vw;
+        height: 60vw;
     }
+}
+
+@media only screen and (max-width: 440px){
+
+    .green-card-dois{
+        height: 70vw;
+    }
+
+    .green-card-quatro{
+        left: -170vw;        
+        top: 460vw;        
+        height: 80vw;
+    }
+
+}
+
+@media only screen and (max-width: 400px){
+
+    .green-card-quatro{
+        top: 460vw;
+        left: -190vw;
+    }
+
+}
+
+@media only screen and (max-width: 350px){
+
+    .green-card,
+    .green-card-dois,
+    .green-card-tres,
+    .green-card-quatro{
+        height: 110vw;
+    }
+
+    .green-card-dois{
+        top: 130vw;
+    }
+
+    .green-card-tres{
+        top: 145vw;
+    }
+
+    .green-card-quatro{
+        top: 610vw;
+        left: -210vw;
+    }
+
 }
