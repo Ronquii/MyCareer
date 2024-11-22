@@ -6,93 +6,74 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="registre_se/style.css">
-    <link rel="stylesheet" href="registre_se/dialog.css" />
+    <link rel="stylesheet" href="registre_se/dialog.css">
     <script src="registre_se/dialog.js" defer></script>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" ;>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
     <title>Login</title>
 </head>
 
 <body>
-    <div class="main-login">
-        <div class="left-login">
-            <img src="Design/Aguia.png" class="aguia" />
-            <h1> Nossa <span style="color: #096a57;"> missão <span style="color: #096a57;"> <span
-                            style="color: #ffffff;"> é </h1>
-            <h2><span style="color: #096a57;"><br>você <span style="color: #ffffff;">no <span
-                            style="color: #096a57;">topo</span>!</h2>
-        </div>
-        <div class="right-login">
-            <img src="Design/Linhas.png" class="linhas" />
+    <main class="main-login">
+        <section class="left-login">
+            <img src="Design/Aguia.png" class="aguia" alt="Imagem de águia">
+            <h1>Nossa <span style="color: #096a57;"> missão </span> é</h1>
+            <h2><span style="color: #096a57;">você</span> no <span style="color: #096a57;;">topo</span>!</h2>
+        </section>
+        <section class="right-login">
+            <img src="Design/Linhas.png" class="linhas" alt="Linhas decorativas">
             <div class="Linha-bg"></div>
             <div class="card-login">
-
                 <h1>LOGIN</h1>
-                <div class="textfield1">
-                    <label for="usuario">Usuário</label>
-                    <input type="text" name="usuario" placeholder="  Usuário">
-                </div>
-                <div class="textfield2">
-                    <label for="Senha1">Senha</label>
-                    <input type="password" name="senha" placeholder="  Senha">
-                </div>
-                <div class="lbr_senha">
-
-                    <input type="checkbox">Lembrar senha
-
-                    <span style="color: #096a57;">
-
-                        <div class="recovery">
-                            <label for="recuperar">Esqueceu a senha?</label>
-                    </span>
-                </div>
-
-            </div>
-            <div>
-                <button class="btn-login"><a href="Pagina_inicial.html">ENTRAR</a></button>
-            </div>
-            <div class="Conta">
-
-                <label for="crconta">Não tem conta? <!--<a href="registre_se.html"> --><button id="open-modal">Crie
-                        agora!</button>
-                    <div id="fade" class="hide"></div>
-                    <div id="modal" class="hide">
-                        <div class="modal-header">
-                            <h1>Bem-Vindo</h1>
-                            <button id="close-modal"><b>X</b></button>
-                        </div>
-                        <div class="modal-body">
-                            <div class="form">
-                                <div class="textfield1">
-                                    <label for="usuario">Nome Completo</label>
-                                    <input type="text" name="usuario" placeholder="  Nome">
-                                </div>
-                                <br>
-                                <div class="textfield1">
-                                    <label for="usuario">E-mail</label>
-                                    <input type="text" name="usuario" placeholder="  E-mail">
-                                </div>
-                                <div class="textfield2">
-                                    <label for="Senha">Senha</label>
-                                    <input type="password" name="senha" placeholder="  Senha">
-                                </div>
-                                <div class="textfield2">
-                                    <br>
-                                    <label for="Senha">Confirmar Senha</label>
-                                    <input type="password" name="senha" placeholder="  Confirmar Senha">
-                                </div>
-                            </div>
-                            <div id="save-modal">
-                                <button class="save-modal">Criar Conta</button>
-                            </div>
-                        </div>
+                <form action="Pagina_inicial.html" method="post">
+                    <div class="textfield1">
+                        <label for="usuario">Usuário</label>
+                        <input type="text" id="usuario" name="usuario" placeholder="  Usuário" required>
                     </div>
-                </label>
+                    <div class="textfield2">
+                        <label for="senha">Senha</label>
+                        <input type="password" id="senha" name="senha" placeholder="  Senha" required>
+                    </div>
+                    <button type="submit" class="btn-login">ENTRAR</button>
+                </form>
+            </div>
+
+        </section>
+
+        <!-- Modal para criação de conta -->
+        <div id="fade" class="hide"></div>
+        <div id="modal" class="hide">
+            <div class="modal-header">
+                <h1>Bem-Vindo</h1>
+                <a href="#" id="close-modal"><b>X</b></a>
+            </div>
+            <div class="modal-body">
+                <form class="form">
+                    <div class="textfield1">
+                        <label for="nome">Nome Completo</label>
+                        <input type="text" id="nome" name="nome" placeholder="  Nome Completo" required>
+                    </div>
+                    <br>
+                    <div class="textfield1">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" name="email" placeholder="  E-mail" required>
+                    </div>
+                    <div class="textfield2">
+                        <label for="senha-nova">Senha</label>
+                        <input type="password" id="senha-nova" name="senha-nova" placeholder="  Senha" required>
+                    </div>
+                    <div class="textfield2">
+                        <label for="confirmar-senha">Confirmar Senha</label>
+                        <input type="password" id="confirmar-senha" name="confirmar-senha"
+                            placeholder="  Confirmar Senha" required>
+                    </div>
+                </form>
+                <div id="save-modal">
+                    <a class="save-modal" href="#">Criar Conta</a>
+                </div>
             </div>
         </div>
-
-    </div>
-    </div>
-    </div>
+    </main>
 </body>
 
 </html>
