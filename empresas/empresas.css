@@ -234,7 +234,7 @@ mark {
     display: none;
 }
 
-@media only screen and (max-width: 1920px) and (min-width: 1281px){
+@media only screen and (max-width: 1920px) and (min-width: 1300px){
 
     .gd-font{
         top: 10%;
