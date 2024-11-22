@@ -234,6 +234,33 @@ mark {
     display: none;
 }
 
+@media only screen and (max-width: 1920px) and (min-width: 1281px){
+
+    .gd-font{
+        top: 10%;
+    }
+
+    .gd-lista-um{
+        top: 30%;
+    }
+
+    .gcd-article-dois, .gd-lista-dois{
+        padding-top: 5%;
+    }
+
+    .imgLado > img{
+        left: 60%;
+    }
+
+    .green-card-dois{
+        left: 16%;
+    }
+
+    .imgtres > img{
+        left: 145%;
+    }
+}
+
 @media only screen and (max-width: 1280px) {
 
     .green-card {
