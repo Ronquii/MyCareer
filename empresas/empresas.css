@@ -147,7 +147,6 @@ mark {
     background-color: #132d46;
     width: 100%;
     position: absolute;
-    display: flexbox;
 }
 
 .parc {
@@ -235,23 +234,23 @@ mark {
     display: none;
 }
 
-@media only screen and (max-width: 1280px){
+@media only screen and (max-width: 1280px) {
 
-    .green-card{
+    .green-card {
         display: flex;
         height: 80%;
     }
 
-    .gd-lista-um{
+    .gd-lista-um {
         padding-top: 5%;
     }
 
-    .imgLado>img{
-      left: 53%;
-      padding: 0px;
+    .imgLado>img {
+        left: 53%;
+        padding: 0px;
     }
 
-    .green-card-dois{
+    .green-card-dois {
         right: 4%;
     }
 
@@ -260,36 +259,36 @@ mark {
         display: flex;
     }
 
-    .imgtres>img{
-       left: 125%;
+    .imgtres>img {
+        left: 125%;
     }
 }
 
-@media only screen and (max-width: 1180px){
+@media only screen and (max-width: 1180px) {
 
-    .imgLado>img{
+    .imgLado>img {
         width: 50%;
         height: 50%;
         padding-top: 10%;
         left: 49%;
-      }
+    }
 
-    .green-card-dois{
+    .green-card-dois {
         right: 10%;
         position: relative;
         margin-top: 15%;
         height: 50vw;
     }
 
-    .parc{
+    .parc {
         top: 360%;
     }
 
-    .green-card-tres{
+    .green-card-tres {
         height: 30vw;
     }
 
-    .imgtres>img{
+    .imgtres>img {
         width: 80%;
         height: 30vw;
     }
@@ -298,96 +297,97 @@ mark {
 
 @media screen and (max-width: 1110px) {
 
-    .Card-home>h3{
+    .Card-home>h3 {
         left: 10%;
     }
 
-    .green-card{
+    .green-card {
         height: 87%;
     }
 
-    .green-card-dois{
+    .green-card-dois {
         right: 17%;
         height: 70vw;
         top: 10vw;
     }
 
-    .imgdois>img{
+    .imgdois>img {
         height: 50vw;
         bottom: 20vw;
     }
 
     .green-card-tres,
-    .imgtres>img{
+    .imgtres>img {
         bottom: 30vw;
     }
 
-    .parc{
+    .parc {
         top: 390%;
     }
 
-    hr{
+    hr {
         display: none;
     }
 }
 
-@media only screen and (max-width: 980px){
+@media only screen and (max-width: 980px) {
+
     .imgdois,
     .imgLado,
     .imgtres {
         display: none;
     }
 
-    .green-card{
+    .green-card {
         left: 15%;
         width: 50%;
     }
 
-    .green-card-dois{
+    .green-card-dois {
         top: 70vw;
         width: 50%;
         right: 54%;
     }
 
-    .green-card-tres{
+    .green-card-tres {
         top: 85vw;
         left: 15%;
         width: 50%;
         height: 40vw;
     }
 
-    .parc{
+    .parc {
         top: 385%;
         left: 35%;
     }
 
-    .parceiros{
+    .parceiros {
         top: 320vw;
     }
 }
 
-@media only screen and (max-width: 880px){
+@media only screen and (max-width: 880px) {
 
-    .Card-home>h3{
+    .Card-home>h3 {
         font-size: 90px;
     }
 
-    .green-card-dois{
+    .green-card-dois {
         width: 52%;
         right: 63%;
         top: 76vw;
         height: 75vw;
     }
 
-    .green-card-tres{
+    .green-card-tres {
         top: 85vw;
     }
 
-    .parc{
+    .parc {
         top: 370%;
     }
 
-    .parceiros{
+    .parceiros {
         top: 350vw;
     }
 
@@ -437,7 +437,7 @@ mark {
     .green-card-tres {
         height: 45vw;
         width: 70%;
-        left:   10%;
+        left: 10%;
     }
 
     .parc {
@@ -446,7 +446,6 @@ mark {
     }
 
     .parceiros {
-        display: flexbox;
         position: relative;
         height: 600px;
         top: 1000px;
@@ -454,7 +453,7 @@ mark {
 
 }
 
-@media only screen and (max-width: 680px){
+@media only screen and (max-width: 680px) {
 
     .green-card {
         height: 80%;
@@ -466,20 +465,20 @@ mark {
         height: 85vw;
         right: 98%;
     }
-    
+
     .green-card-tres {
         height: 55vw;
         left: 2%;
         top: 100vw;
     }
 
-    .parc{
+    .parc {
         top: 360%;
     }
 
 }
 
-@media only screen and (max-width: 580px){
+@media only screen and (max-width: 580px) {
 
     .green-card {
         height: 95%;
@@ -491,36 +490,36 @@ mark {
         height: 115vw;
         right: 115%;
     }
-    
+
     .green-card-tres {
         height: 65vw;
         left: 2%;
         top: 155vw;
     }
 
-    .parc{
+    .parc {
         top: 400%;
     }
 
-    .parceiros{
+    .parceiros {
         top: 220vw;
         height: 130vw;
     }
 
-    .p1>img{
-        top:10vw;
+    .p1>img {
+        top: 10vw;
     }
 
-    .p2>p{
+    .p2>p {
         top: 90vw;
     }
 
-    .p2>img{
-        top:40vw;
+    .p2>img {
+        top: 40vw;
     }
 }
 
-@media only screen and (max-width: 530px){
+@media only screen and (max-width: 530px) {
 
     .Card-home>h4 {
         padding-left: 0;
@@ -539,21 +538,21 @@ mark {
         top: 190vw;
     }
 
-    .green-card-tres{
+    .green-card-tres {
         top: 210vw;
         height: 95vw;
     }
 
-    .parc{
+    .parc {
         top: 460%;
         left: 10vw;
     }
 
     .parceiros {
-        display: flexbox;
         height: 270vw;
         top: 300vw;
     }
+
     .p1>img {
         top: 10vw;
         left: 20vw;
@@ -589,7 +588,7 @@ mark {
     }
 }
 
-@media only screen and (max-width: 440px){
+@media only screen and (max-width: 440px) {
 
     .Card-home>h4 {
         font-size: 10vw;
@@ -628,12 +627,11 @@ mark {
         right: 8vw;
     }
 
-    .parc{
+    .parc {
         top: 900vw;
     }
 
     .parceiros {
-        display: flexbox;
         height: 270vw;
         top: 300vw;
     }
@@ -673,65 +671,66 @@ mark {
     }
 }
 
-@media only screen and (max-width: 400px){
+@media only screen and (max-width: 400px) {
     .green-card-dois {
         top: 260vw;
         right: 180%;
     }
 
-    .green-card-tres{
+    .green-card-tres {
         top: 280vw;
     }
 
-    .parc{
+    .parc {
         top: 1000vw;
     }
 
-    .parceiros{
+    .parceiros {
         top: 400vw;
     }
 
-    .p1>h1{
+    .p1>h1 {
         top: 58vw;
     }
-    .p2>h1{
+
+    .p2>h1 {
         top: 200vw;
     }
 
 }
 
-@media only screen and (max-width: 360px){
-    
-    .green-card-dois{
+@media only screen and (max-width: 360px) {
+
+    .green-card-dois {
         top: 285vw;
         right: 200%;
     }
 
-    .green-card-tres{
+    .green-card-tres {
         top: 310vw;
     }
 
-    .parc{
-        top: 1010vw;        
+    .parc {
+        top: 1010vw;
     }
 
-    .parceiros{
+    .parceiros {
         height: 300vw;
     }
 
-    .p2>h1{
+    .p2>h1 {
         top: 215vw;
     }
 
 }
 
-@media only screen and (max-width: 320px){
+@media only screen and (max-width: 320px) {
 
-    .parc{
+    .parc {
         top: 1030vw;
     }
 
-    .p2>h1{
+    .p2>h1 {
         top: 225vw;
     }
 
