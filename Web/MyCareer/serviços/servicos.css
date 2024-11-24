@@ -1,0 +1,243 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.Card-home {
+    display: flex;
+    background-color: #132d46;
+    margin-top: 0;
+    margin-bottom: 0;
+    height: 600px;
+}
+
+.Card-home>h3 {
+    position: relative;
+    justify-content: center;
+    justify-items: center;
+    align-self: center;
+    top: 40px;
+    left: 10%;
+    font-size: 100px;
+    font-family: Calibri, sans-serif;
+    font-weight: 400;
+    color: #ffff;
+}
+
+.green-card {
+    background-color: #132d46d0;
+    border-radius: 20px;
+    width: 40%;
+    height: 280px;
+    padding-left: 20px;
+    margin-left: 70px;
+    position: absolute;
+}
+
+.gd-font {
+    position: absolute;
+    font-size: 40px;
+    color: #ffffff;
+}
+
+.gd-lista-um {
+    position: absolute;
+    font-size: 23px;
+    top: 100px;
+    color: #ffffff;
+}
+
+.green-card-dois {
+    background-color: #132d46d0;
+    border-radius: 20px;
+    width: 40%;
+    height: 280px;
+    margin-left: 750px;
+    position: relative;
+}
+
+.gcd-article-dois {
+    padding-left: 3%;
+}
+
+.gd-font-dois {
+    font-size: 40px;
+    color: #ffffff;
+}
+
+.gd-lista-dois {
+    font-size: 23px;
+    color: #ffffff;
+    margin-right: 3%;
+}
+
+.green-card-tres {
+    background-color: #132d46d0;
+    border-radius: 20px;
+    width: 40%;
+    height: 300px;
+    padding-top: 10px;
+    margin-left: 70px;
+    margin-top: 30px;
+    position: relative;
+}
+
+.gcd-article-tres {
+    margin-left: 3%;
+}
+
+.gd-lista-tres {
+    font-size: 23px;
+    padding-right: 3%;
+    color: #ffffff;
+}
+
+.green-card-quatro {
+    background-color: #132d46d0;
+    border-radius: 20px;
+    width: 40%;
+    height: 300px;
+    margin-left: 750px;
+    position: absolute;
+    top: 1050px
+}
+
+.gcd-article-quatro {
+    margin-left: 3%;
+}
+
+.gd-lista-quatro {
+    font-size: 23px;
+    padding-right: 3%;
+    color: #ffffff;
+}
+
+.infos {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 50px;
+    bottom: 0%;
+}
+
+.Card-home>h4 {
+    display: none;
+}
+
+
+@media only screen and (max-width: 730px) {
+
+    .Card-home>h3 {
+        font-size: 15vw;
+        left: 19%;
+        top: 1%;
+    }
+
+    .green-card {
+        width: 80%;
+        height: 45%;
+    }
+
+    .gd-font {
+        left: 20px;
+        padding-top: 10px;
+    }
+
+    .gd-lista-um {
+        margin-top: 50px;
+        left: 20px;
+    }
+
+    .green-card-dois {
+        margin-left: 10%;
+        width: 80%;
+        height: 65%;
+        top: 400px;
+    }
+
+    .gd-font-dois {
+        left: 10px;
+        padding-top: 10px;
+    }
+
+    .gd-lista-dois {
+        padding-top: 20px;
+        left: 10px;
+        padding-bottom: 25px;
+    }
+
+    .green-card-tres {
+        height: 350px;
+        top: 410px;
+        width: 80%;
+    }
+
+    .gd-lista-tres {
+        margin-top: 40px;
+        left: 8px;
+    }
+
+    .green-card-quatro {
+        margin-left: 10%;
+        width: 80%;
+        height: 350px;
+        top: 450px;
+        display: flexbox;
+        position: relative;
+    }
+
+    .gd-lista-quatro {
+        margin-top: 40px;
+        left: 10px;
+    }
+}
+
+@media only screen and (max-width: 400px) and (min-width: 100px) {
+
+    .Card-home>h3 {
+        font-size: 15vw;
+        right: 9%;
+        top: 2%;
+        width: 0;
+    }
+
+    .green-card {
+        right: 8vw;
+        height: 128vw;
+    }
+
+    .gd-lista-um {
+        top: 35vw;
+        padding-left: 3vw;
+        padding-right: 3vw;
+    }
+
+    .green-card>article {
+        padding: 3vw;
+    }
+
+    .gd-font-dois,
+    .gd-lista-dois,
+    .gd-lista-tres,
+    .gd-lista-quatro {
+        padding-left: 3vw;
+        padding-right: 3vw;
+    }
+
+    .green-card-dois {
+        left: 1vw;
+        height: 141vw;
+        top: 138vw;
+    }
+
+    .green-card-tres {
+        top: 138vw;
+        right: 8vw;
+        height: 158vw;
+    }
+
+    .green-card-quatro {
+        top: 148vw;
+        left: 1vw;
+        height: 148vw;
+    }
+}

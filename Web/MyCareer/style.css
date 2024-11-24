@@ -1,0 +1,286 @@
+/* Estilo Global */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #0a0f1e, #12192b); /* Fundo escuro */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: white;
+}
+
+/* Container Principal */
+.main-login {
+    display: flex;
+    flex-wrap: wrap; /* Torna responsivo */
+    width: 90%;
+    max-width: 1200px;
+    background: #192a45; /* Fundo do container */
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+}
+
+/* Sessão Esquerda */
+.left-login {
+    flex: 1;
+    background: #12192b; /* Fundo da seção esquerda */
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    min-width: 300px; /* Garantia para telas menores */
+}
+
+.aguia {
+    width: 150px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+
+.left-login h1 {
+    font-size: 2rem;
+    line-height: 1.5;
+}
+
+.highlight {
+    color: #35cfb4; /* Destaque com verde-água */
+}
+
+/* Sessão Direita */
+.right-login {
+    flex: 1;
+    padding: 40px;
+    background: #12192b; /* Fundo do card direito */
+    min-width: 300px; /* Garantia para telas menores */
+}
+
+.card-login {
+    background: #192a45; /* Fundo do card */
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+    text-align: center;
+    color: white;
+}
+
+.card-login h1 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #ffffff; /* Texto branco */
+}
+
+.textfield {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.textfield label {
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+    color: #9cb3c9; /* Cor do label */
+    display: block;
+}
+
+.textfield input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #33415e; /* Borda azul escuro */
+    border-radius: 5px;
+    background: #1f2c47; /* Fundo do input */
+    color: white;
+}
+
+.textfield input::placeholder {
+    color: #6d7f98; /* Cor do placeholder */
+}
+
+.textfield input:focus {
+    border-color: #35cfb4; /* Destaque no foco */
+    outline: none;
+    box-shadow: 0 0 5px rgba(53, 207, 180, 0.6); /* Brilho ao focar */
+}
+
+/* Opções adicionais */
+.options {
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+.options a {
+    text-decoration: none;
+    color: #35cfb4;
+}
+
+.options a:hover {
+    text-decoration: underline;
+}
+
+/* Botões */
+.btn-login, .btn-save {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    background: #35cfb4; /* Fundo do botão */
+    color: #12192b; /* Texto do botão */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.btn-login:hover, .btn-save:hover {
+    background: #2aa88c; /* Cor do botão ao passar o mouse */
+}
+
+.create-account {
+    margin-top: 20px;
+}
+
+.btn-create {
+    background: none;
+    border: none;
+    color: #35cfb4;
+    font-size: 1rem;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.btn-create:hover {
+    color: #2aa88c;
+}
+
+/* Modal */
+#fade {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 5;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    visibility: hidden;
+}
+
+#modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    max-width: 500px;
+    background: #192a45; /* Fundo do modal */
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+    z-index: 10;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    visibility: hidden;
+}
+
+.modal-content {
+    padding: 30px;
+    color: white;
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.modal-header h2 {
+    font-size: 1.5rem;
+    color: #35cfb4; /* Título com destaque verde-água */
+}
+
+.close-modal {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: #9cb3c9;
+    cursor: pointer;
+}
+
+.close-modal:hover {
+    color: #35cfb4;
+}
+
+.modal-body {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.textfield input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #33415e;
+    border-radius: 5px;
+    background: #1f2c47;
+    color: white;
+}
+
+/* Mostrar/Esconder Modal */
+.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.hide {
+    opacity: 0;
+    visibility: hidden;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .left-login h1 {
+        font-size: 1.5rem;
+    }
+
+    .btn-login, .btn-save {
+        font-size: 0.9rem;
+    }
+
+    .main-login {
+        flex-direction: column; /* Empilha as seções em telas menores */
+    }
+
+    .left-login,
+    .right-login {
+        width: 100%;
+        min-width: auto;
+        padding: 2px;
+    }
+
+    .card-login {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .left-login h1 {
+        font-size: 1.2rem;
+    }
+
+    .btn-login, .btn-save {
+        font-size: 0.8rem;
+    }
+
+    .modal-content {
+        padding: 15px;
+    }
+
+    .modal-header h2 {
+        font-size: 1.2rem;
+    }
+}

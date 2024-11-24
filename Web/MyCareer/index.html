@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Container Principal -->
+    <div class="main-login">
+        <!-- Sessão Esquerda -->
+        <div class="left-login">
+            <img class="aguia" src="../MyCareer/Design/Aguia-removebg-preview.png" alt="Logo">
+            <h1>Nossa <span class="highlight">missão</span> é fazer <span class="highlight">Você</span> chegar ao <span class="highlight">Topo!</span></h1>
+        </div>
+
+        <!-- Sessão Direita -->
+        <div class="right-login">
+            <div class="card-login">
+                <h1>Login</h1>
+                <form>
+                    <div class="textfield">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" placeholder="Digite seu e-mail">
+                    </div>
+                    <div class="textfield">
+                        <label for="password">Senha</label>
+                        <input type="password" id="password" placeholder="Digite sua senha">
+                    </div>
+                    <div class="options">
+                        <a href="#" class="forgot-password">Esqueceu a senha?</a>
+                    </div>
+                    <button type="button" id="btn-login" class="btn-login">Entrar</button>
+                </form>
+                <div class="create-account">
+                    Não tem conta? <button id="open-modal" class="btn-create">Crie agora!</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div id="fade" class="fade"></div>
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Crie sua conta</h2>
+                <button id="close-modal" class="close-modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form id="register-form">
+                    <div class="textfield">
+                        <label for="name">Nome Completo</label>
+                        <input type="text" id="name" placeholder="Digite seu nome" required>
+                    </div>
+                    <div class="textfield">
+                        <label for="email-register">E-mail</label>
+                        <input type="email" id="email-register" placeholder="Digite seu e-mail" required>
+                    </div>
+                    <div class="textfield">
+                        <label for="password-register">Senha</label>
+                        <input type="password" id="password-register" placeholder="Crie uma senha" required>
+                    </div>
+                    <div class="textfield">
+                        <label for="confirm-password">Confirmar Senha</label>
+                        <input type="password" id="confirm-password" placeholder="Confirme sua senha" required>
+                    </div>
+                    <button type="submit" class="btn-save">Criar Conta</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="dialog.js"></script>
+</body>
+</html>

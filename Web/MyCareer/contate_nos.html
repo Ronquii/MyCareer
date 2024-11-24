@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contate_nos/contate_nos.css">
+    <link rel="stylesheet" href="cabeçalho.css">
+    <title> Contate-nos</title>
+</head>
+
+<body>
+    <header>
+        <nav class="nav-bar">
+            <div class="logo">
+                <a href="Pagina_inicial.html"><img src="Design/My1.png"></img></a>
+            </div>
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="servicos.html" class="nav-link">Serviços</a></li>
+                    <li class="nav-item"><a href="contate_nos.html" class="nav-link">Fale conosco</a></li>
+                    <li class="nav-item"><a href="sobre_nos.html" class="nav-link">Sobre Nós</a></li>
+                    <li class="nav-item"><a href="empresas.html" class="nav-link">Empresas</a></li>
+                </ul>
+            </div>
+            <div class="login-button">
+                <button><a href="index.com">Entrar</a></button>
+            </div>
+
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="menu_white_36dp.svg" alt=""></button>
+            </div>
+        </nav>
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="servicos.html" class="nav-link">Serviços</a></li>
+                <li class="nav-item"><a href="contate_nos.html" class="nav-link">Fale conosco</a></li>
+                <li class="nav-item"><a href="sobre_nos.html" class="nav-link">Sobre Nós</a></li>
+                <li class="nav-item"><a href="empresas.html" class="nav-link">Empresas</a></li>
+            </ul>
+
+            <div class="login-button">
+                <button><a href="index.html">Entrar</a></button>
+            </div>
+        </div>
+    </header>
+    <div class="contate-nos">
+        <div class="contato">
+            <h6>CONTATE-NOS</h6>
+        </div>
+        <div class="infos">
+            <h1> Informações de contato</h1>
+            <p> Obrigado por nos contatar! <br> Entre em contato com o nosso SAC: 0800 1234 5678
+                <br>
+                Rua Dr. Sales de Oliveira 1661 (Vila Industrial), Campinas, SP, 13035-500 <br>
+                mycareer@sac.com.br
+            </p>
+        </div>
+        <div class="formResp">
+            <div class="formulário">
+                <form action="https://webhook.site/fb4056f4-7ed5-4705-93cd-cd7ac345fdd1">
+                    <fieldset class="grupo">
+                        <div class="formElement">
+                            <p>Nome completo:</p>
+                            <label for="nome"></label>
+                            <input class="inpPlace" type="text" name="nome" placeholder="  Infome seu nome" required>
+                            <p>E-mail:</p>
+                            <label for="email"></label>
+                            <input class="inpPlace" type="email" name="email" placeholder="  Infome seu Email" required>
+                            <p>Telefone:</p>
+                            <label for="Telefone"></label>
+                            <input class="inpPlace" type="tel" name="Telefone" placeholder="  Infome seu Telefone"
+                                required>
+                            <br><br>
+
+                            <select name="motivo_contato">
+                                <option value="">Selecione</option>
+                                <option value="consultoria">Consultoria</option>
+                                <option value="financeiro">Financeiro</option>
+                                <option value="duvidas">Dúvidas</option>
+                            </select>
+                            <br><br>
+                            <textarea style="resize: none" placeholder="Deixe sua mensagem"></textarea>
+                            <br>
+                            <div class="checkbox">
+                                <Label class="cblbl">Eu sou:</Label><br><br>
+                                <input type="radio" id="op1" name="option" value="Pessoa Física">
+                                <label for="op1">Pessoa Física</label>
+
+                                <input type="radio" id="op2" name="option" value="Pessoa Jurídica">
+                                <label for="op2">Pessoa Jurídica</label>
+                            </div>
+                        </div>
+
+                        <p><button type="submit" class="submitbt">Enviar</button></p><br>
+
+                    </fieldset>
+
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="menu.js"></script>
+</body>
+
+</html>
