@@ -46,7 +46,7 @@ select,
 textarea,
 button {
     border-radius: 15px;
-    background-color: rgb(224, 229, 231);
+    background-color: rgb(231, 224, 225);
     border-style: none;
 
 }
@@ -83,7 +83,7 @@ textarea {
 .grupo input {
     width: 500px;
     height: 40px;
-    background-color: rgba(16, 4, 187, 0.705);
+    background-color: rgba(206, 198, 198, 0.705);
     color: white;
     border-style: none;
     margin-bottom: 10px;
@@ -114,7 +114,7 @@ select {
     border-style: none;
     width: 300px;
     height: 40px;
-    background-color: rgba(3, 0, 165, 0.705);
+    background-color: rgba(8, 224, 141, 0.986);
     color: #ffffff;
 }
 
@@ -151,7 +151,7 @@ select {
     }
 
     .infos>p {
-        background-color: #132D46;
+        background-color: #46131c;
         text-align: center;
         color: #ffffff;
         font-weight: 1;
