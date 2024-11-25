@@ -21,7 +21,6 @@ body{
     font-family: Calibri, sans-serif;
     font-weight: 400;
     color: #ffff;
-    padding: 5px;
 }
 .infos {
     display: flex;
@@ -35,7 +34,7 @@ body{
     margin-right: 5%;
     font-size: 3cap;
     padding-top: 30px;
-
+    padding-left: 30px;
 }
 
 @media screen and (max-width: 981px) and (min-width: 500px){
