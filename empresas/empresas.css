@@ -261,7 +261,7 @@ mark {
     }
 }
 
-@media only screen and (max-width: 1280px) {
+@media only screen and (max-width: 1280px) and (min-width: 1181px) {
 
     .green-card {
         display: flex;
@@ -291,7 +291,7 @@ mark {
     }
 }
 
-@media only screen and (max-width: 1180px) {
+@media only screen and (max-width: 1180px) and (min-width: 1111px) {
 
     .imgLado>img {
         width: 50%;
