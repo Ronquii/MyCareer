@@ -25,11 +25,11 @@
                 </ul>
             </div>
             <div class="login-button">
-                <a href="index.com">Entrar</a>
+                <button><a href="index.com">Entrar</a></button>
             </div>
 
             <div class="mobile-menu-icon">
-                <button onclick="menuShow()"><img class="icon" src="Design/menu_white_36dp.svg" alt=""></button>
+                <button onclick="menuShow()"><img class="icon" src="menu_white_36dp.svg" alt=""></button>
             </div>
         </nav>
         <div class="mobile-menu">
@@ -41,7 +41,7 @@
             </ul>
 
             <div class="login-button">
-                <a href="index.html">Entrar</a>
+                <button><a href="index.html">Entrar</a></button>
             </div>
         </div>
     </header>
@@ -62,34 +62,35 @@
                 <form action="https://webhook.site/fb4056f4-7ed5-4705-93cd-cd7ac345fdd1">
                     <fieldset class="grupo">
                         <div class="formElement">
-                            <p>Nome completo:</p>
-                            <label for="nome"></label>
-                            <input class="inpPlace" type="text" name="nome" placeholder="  Infome seu nome" required>
-                            <p>E-mail:</p>
-                            <label for="email"></label>
-                            <input class="inpPlace" type="email" name="email" placeholder="  Infome seu Email" required>
                             <p>Telefone:</p>
                             <label for="Telefone"></label>
-                            <input class="inpPlace" type="tel" name="Telefone" placeholder="  Infome seu Telefone"
+                            <input class="inpPlace" type="tel" name="Telefone" placeholder="  Infome seu Telefone" required>
+                            <p>Qual é o seu cargo atual?</p>
+                            <label for="Cargo"></label>
+                            <input class="inpPlace" type="text" name="cargo" placeholder="  Infome seu cargo" required>
+                            <p>Qual área você quer atuar ou transitar em sua carreira?</p>
+                            <label for="area"></label>
+                            <input class="inpPlace" type="text" name="area" placeholder=" Ex: Tecnologia, Gestão, Design, etc."
                                 required>
                             <br><br>
 
                             <select name="motivo_contato">
-                                <option value="">Selecione</option>
-                                <option value="consultoria">Consultoria</option>
-                                <option value="financeiro">Financeiro</option>
-                                <option value="duvidas">Dúvidas</option>
+                                <option value="">Preferência de horário para contato</option>
+                                <option value="consultoria">Manhã</option>
+                                <option value="financeiro">Tarde</option>
+                                <option value="duvidas">Noite</option>
                             </select>
                             <br><br>
-                            <textarea style="resize: none" placeholder="Deixe sua mensagem"></textarea>
+                            <p>Quais são os desafios que você está enfrentando na sua carreira?</p>
+                            <textarea style="resize: none" placeholder="Descreva os principais desafios que você está enfrentando na sua carreira, como falta de oportunidades, dificuldades em transitar para uma nova área, etc."></textarea>
                             <br>
                             <div class="checkbox">
-                                <Label class="cblbl">Eu sou:</Label><br><br>
-                                <input type="radio" id="op1" name="option" value="Pessoa Física">
-                                <label for="op1">Pessoa Física</label>
+                                <Label class="cblbl">Objetivo de Consultoria:</Label><br><br>
+                                <input type="radio" id="op1" name="option" value="Crescimento Profissional">
+                                <label for="op1">Crescimento Profissional</label>
 
-                                <input type="radio" id="op2" name="option" value="Pessoa Jurídica">
-                                <label for="op2">Pessoa Jurídica</label>
+                                <input type="radio" id="op2" name="option" value="Mudança de Carreira">
+                                <label for="op2">Mudança de Carreira</label>
                             </div>
                         </div>
 
