@@ -133,17 +133,29 @@ select {
 }
 
 
-@media only screen and (max-width: 730px) {
 
+@media only screen and (max-width: 1300px) {
+    .formulário{
+        left: 48%;
+    }
+}
+
+@media only screen and (max-width: 1143px){
+
+    .formulário{
+        left: 25%;
+    }
+    
     .infos {
         top: 750px;
         position: relative;
         background-color: #132D46;
-        left: 0%;
+        width: 100%;
+        right: 2%;
     }
 
     .infos>h1 {
-        left: 24%;
+        left: 35%;
         top: 10px;
         position: absolute;
         color: #FFFFFF;
@@ -151,19 +163,26 @@ select {
     }
 
     .infos>p {
-        background-color: #46131c;
+        background-color: #132D46;
         text-align: center;
         color: #ffffff;
         font-weight: 1;
         font-family: 'Poppins', sans-serif;
         padding: 10px 120px;
     }
+}
 
+@media only screen and (max-width: 800px) {
+    
     .formulário {
         left: 180px;
         bottom: 150px;
         position: relative;
         display: flex;
+    }
+
+    .infos>h1 {
+        left: 20%;
     }
 
     .contato {
@@ -172,65 +191,97 @@ select {
 
 }
 
-@media only screen and (max-width: 400px) and (min-width: 100px) {
+@media only screen and (max-width: 660px){
 
     .formElement,
     .grupo,
     .formulário {
-        width: 100px;
-        position: relative;
-        height: 180vw;
+        width: 50vw;
+        height: 100%;
+        bottom: 30vw;
     }
 
     .formElement>input,
     .formElement>select,
-    .formElement>textarea {
-        width: 250px;
+    .formElement>p {
+        width: 40vw;
+        left: 10%;
         position: relative;
     }
 
-    .grupo {
-        right: 9vw;
-        top: -220px;
+    .formElement>textarea{
+        width: 37vw;
+        left: 10%;
+        position: relative;
     }
 
-    .checkbox {
-        width: 35vw;
+    .checkbox{
+        width: 37vw;
+        left: 10%;
+        position: relative;
     }
 
-    .formElement {
-        right: 19vw;
-    }
+}
 
+@media only screen and (max-width: 500px){
+
+    .formElement,
+    .grupo,
     .formulário {
-        right: 10vw;
+        bottom: 45vw;
+        left: 25vw;
     }
 
-    .formElement>textarea {
-        right: 2vw;
+    .checkbox{
+        width: 29vw;
     }
 
-    form {
-        padding: 0;
+    .submitbt{
+        width: 40vw;
     }
 
-    .infos {
+    .infos{
         top: 200vw;
-        width: 99%;
-        height: 90vw;
     }
 
-    .infos>h1 {
-        padding: 0;
-        left: 7vw;
-        font-weight: 300
-    }
-
-    .infos>p {
-        top: 15vw;
-        position: relative;
-        padding: 2%;
+    .infos>h1{
         font-size: x-large;
     }
 
 }
+
+@media only screen and (max-width: 420px){
+    .formElement,
+    .grupo,
+    .formulário {
+        bottom: 65vw;
+    }
+
+    .checkbox{
+        width: 35vw;
+    }
+}
+
+@media only screen and (max-width: 390px){
+    
+    .infos>p{
+        font-size: small;
+    }
+
+    .infos{
+        top: 250vw;
+    }
+}
+
+@media only screen and (max-width: 330px){
+
+    .infos{
+        top: 300vw;
+    }
+
+    .infos>h1{
+        font-size: medium;
+    }
+
+}
+
