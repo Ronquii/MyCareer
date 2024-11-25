@@ -35,7 +35,6 @@ body {
     align-items: center;
     justify-content: center;
     width: 50%;
-    left: 672px;
     color: white;
     Font-family: Cambria;
     border-style: none;
@@ -48,7 +47,6 @@ button {
     border-radius: 15px;
     background-color: rgb(231, 224, 225);
     border-style: none;
-
 }
 
 textarea {
@@ -122,14 +120,16 @@ select {
     color: white;
 }
 
-.cblbl {
-    position: relative;
-    top: 30px;
-    color: white;
-}
 
 .checkbox {
     color: white;
+    border: 0px;
+}
+
+.formElement{
+    padding-left: 3%;
+    position: relative;
+    bottom: 2vw;
 }
 
 
@@ -198,21 +198,28 @@ select {
     .formulário {
         width: 50vw;
         height: 100%;
-        bottom: 30vw;
     }
 
     .formElement>input,
-    .formElement>select,
-    .formElement>p {
+    .formElement>select{
         width: 40vw;
         left: 10%;
         position: relative;
     }
+    
+    .formElement>label{
+        left: 5%;
+        position: relative;
+        margin-right: 5%;
+        padding-right: 5%;
+    }
 
     .formElement>textarea{
         width: 37vw;
+        height: 20vw;
         left: 10%;
         position: relative;
+        min-width: 36vw;
     }
 
     .checkbox{
@@ -221,15 +228,21 @@ select {
         position: relative;
     }
 
+    .submitbt{
+        margin-bottom: 10%;
+        width: 34vw;
+    }
+
+    .infos{
+        top: 200vw;
+    }
+
 }
 
 @media only screen and (max-width: 500px){
 
-    .formElement,
-    .grupo,
-    .formulário {
-        bottom: 45vw;
-        left: 25vw;
+    .formulário{
+        left: 100px;
     }
 
     .checkbox{
@@ -240,21 +253,16 @@ select {
         width: 40vw;
     }
 
-    .infos{
-        top: 200vw;
-    }
-
     .infos>h1{
         font-size: x-large;
     }
 
 }
 
-@media only screen and (max-width: 420px){
-    .formElement,
-    .grupo,
+@media only screen and (max-width: 472px){
+    
     .formulário {
-        bottom: 65vw;
+        bottom: 55vw;
     }
 
     .checkbox{
@@ -262,8 +270,12 @@ select {
     }
 }
 
-@media only screen and (max-width: 390px){
+@media only screen and (max-width: 438px){
     
+    .formulário{
+        bottom: 30vw;
+    }
+
     .infos>p{
         font-size: small;
     }
@@ -273,7 +285,7 @@ select {
     }
 }
 
-@media only screen and (max-width: 330px){
+@media only screen and (max-width: 398px){
 
     .infos{
         top: 300vw;
@@ -285,3 +297,21 @@ select {
 
 }
 
+@media only screen and (max-width: 350px){
+
+    .formulário{
+        bottom: 70vw;
+    }
+
+    .infos{
+        top: 300vw;
+    }
+}
+
+
+@media only screen and (max-width: 330px){
+
+    .formulário{
+        bottom: 90vw;
+    }
+}
