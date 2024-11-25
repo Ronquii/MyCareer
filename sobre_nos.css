@@ -3,95 +3,69 @@ body{
     background-color: #132D46;
 }
 
-.quem-somos h1{color: #00C48E;}
-.quem-somos-desc { color: #FFFFFF;}
-
-.quem-somos {
-    max-width: 1000px;
-    margin: 40px auto;
-    padding: 20px;
-    background-color: #1A1E29;
-    border: 1px solid #6A6E79; /* Cor da borda */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    color: #FFFFFF;
-}
-.equipe p{ color: #FFFFFF};
-.missao p{ color: #FFFFFF};
-
-h1, h2 {
-    color: #1A1E29; /* Cor do Título */
-}
-
-.missao, .enfoque, .equipe, .filosofia, .contato, .paleta-cores {
-    margin-bottom: 20px;
-    background-color: #132D46; /* Cor do fundo da section */
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.missao h2, .enfoque h2, .equipe h2, .filosofia h2, .contato h2 {
-    color: #00C48E; /* Título section */
-}
-
-ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-li {
-    margin-bottom: 10px;
-}
-
-li:before {
-    content: "\2022";
-    color: #1A1E29;
-    font-size: 18px;
-    margin-right: 10px;
-}
-
-.paleta-cores ul {
+.Card-home {
     display: flex;
-    flex-wrap: wrap;
+    background-color: #132d46;
+    margin-top: 0;
+    margin-bottom: 0;
+    height: 600px;
     justify-content: center;
+
+}
+.Card-home>h3 {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-self: center;
+    font-size: 100px;
+    font-family: Calibri, sans-serif;
+    font-weight: 400;
+    color: #ffff;
+}
+.infos {
+    display: flex;
+    width: 100%;
+    height: 90vh;
+    background-color: white;
+}
+.text {
+    background-color: white;
+    display: flex;
+    margin-right: 5%;
+    font-size: 3cap;
+    padding-top: 30px;
+
 }
 
-.paleta-cores li {
-    margin: 10px;
+@media screen and (max-width: 981px) and (min-width: 500px){
+    .infos{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
-
-.paleta-cores span {
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-}
-
-footer {
-    background-color: #1A1E29; /* Background do footer */
-    padding: 20px;
-    text-align: center;
-    color: #FFFFFF; /* footer text color */
-}
-
-hr{
-    display: none;
-}
-
-@media only screen and (max-width: 730px) {
+@media screen and (max-width: 500px){
 
     body{
-        background-color: #1A1E29;
+        height: 100%;
+        width: 100%;
     }
 
-    .quem-somos {
-        border: 1px solid #1A1E29; /* Cor da borda */
+    .Card-home {
+       height: 100vh;
+       width: 100vw;
+    }
+    .Card-home h3{
+        font-size: 4cap;
+    }
+    .infos {
+        height: 100%;
+    }
+    .imgLado {
+        display: none;
     }
 
-    hr{
-        display: block;
-        color-scheme: #00C48E;
-    }
 
 }
