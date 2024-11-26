@@ -16,3 +16,10 @@ nextButton.addEventListener('click', () => {
     showBox(currentIndex);
   }
 });
+
+prevButton.addEventListener('click', () => {
+  if (currentIndex > 0) {
+    currentIndex--;
+    showBox(currentIndex);
+  }
+});
