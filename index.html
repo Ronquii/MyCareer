@@ -1,79 +1,77 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="registre_se/style.css">
-    <link rel="stylesheet" href="registre_se/dialog.css">
-    <script src="registre_se/dialog.js" defer></script>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
-        rel="stylesheet">
-    <title>My Career | Login</title>
+    <title>Login Page</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <main class="main-login">
-        <section class="left-login">
-            <img src="Design/Aguia.png" class="aguia" alt="Imagem de águia">
-            <h1>Nossa <span style="color: #096a57;"> missão </span> é</h1>
-            <h2><span style="color: #096a57;">você</span> no <span style="color: #096a57;;">topo</span>!</h2>
-        </section>
-        <section class="right-login">
-            <img src="Design/Linhas.png" class="linhas" alt="Linhas decorativas">
-            <div class="Linha-bg"></div>
+    <!-- Container Principal -->
+    <div class="main-login">
+        <!-- Sessão Esquerda -->
+        <div class="left-login">
+            <img class="aguia" src="../MyCareer/Design/Aguia-removebg-preview.png" alt="Logo">
+            <h1>Nossa <span class="highlight">missão</span> é fazer <span class="highlight">Você</span> chegar ao <span class="highlight">Topo!</span></h1>
+        </div>
+
+        <!-- Sessão Direita -->
+        <div class="right-login">
             <div class="card-login">
-                <h1>LOGIN</h1>
-                <form action="Pagina_inicial.html" method="post">
-                    <div class="textfield1">
-                        <label for="usuario">Usuário</label>
-                        <input type="text" id="usuario" name="usuario" placeholder="  Usuário" required>
-                    </div>
-                    <div class="textfield2">
-                        <label for="senha">Senha</label>
-                        <input type="password" id="senha" name="senha" placeholder="  Senha" required>
-                    </div>
-                    <button type="submit" class="btn-login"><a href="Pagina_inicial.html">ENTRAR</a></button>
-                </form>
-            </div>
-
-        </section>
-
-        <!-- Modal para criação de conta -->
-        <div id="fade" class="hide"></div>
-        <div id="modal" class="hide">
-            <div class="modal-header">
-                <h1>Bem-Vindo</h1>
-                <a href="#" id="close-modal"><b>X</b></a>
-            </div>
-            <div class="modal-body">
-                <form class="form">
-                    <div class="textfield1">
-                        <label for="nome">Nome Completo</label>
-                        <input type="text" id="nome" name="nome" placeholder="  Nome Completo" required>
-                    </div>
-                    <br>
-                    <div class="textfield1">
+                <h1>Login</h1>
+                <form>
+                    <div class="textfield">
                         <label for="email">E-mail</label>
-                        <input type="email" id="email" name="email" placeholder="  E-mail" required>
+                        <input type="email" id="email" placeholder="Digite seu e-mail">
                     </div>
-                    <div class="textfield2">
-                        <label for="senha-nova">Senha</label>
-                        <input type="password" id="senha-nova" name="senha-nova" placeholder="  Senha" required>
+                    <div class="textfield">
+                        <label for="password">Senha</label>
+                        <input type="password" id="password" placeholder="Digite sua senha">
                     </div>
-                    <div class="textfield2">
-                        <label for="confirmar-senha">Confirmar Senha</label>
-                        <input type="password" id="confirmar-senha" name="confirmar-senha"
-                            placeholder="  Confirmar Senha" required>
+                    <div class="options">
+                        <a href="#" class="forgot-password">Esqueceu a senha?</a>
                     </div>
+                    <button type="button" id="btn-login" class="btn-login">Entrar</button>
                 </form>
-                <div id="save-modal">
-                    <a class="save-modal" href="#">Criar Conta</a>
+                <div class="create-account">
+                    Não tem conta? <button id="open-modal" class="btn-create">Crie agora!</button>
                 </div>
             </div>
         </div>
-    </main>
-</body>
+    </div>
 
+    <!-- Modal -->
+    <div id="fade" class="fade"></div>
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Crie sua conta</h2>
+                <button id="close-modal" class="close-modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form id="register-form">
+                    <div class="textfield">
+                        <label for="name">Nome Completo</label>
+                        <input type="text" id="name" placeholder="Digite seu nome" required>
+                    </div>
+                    <div class="textfield">
+                        <label for="email-register">E-mail</label>
+                        <input type="email" id="email-register" placeholder="Digite seu e-mail" required>
+                    </div>
+                    <div class="textfield">
+                        <label for="password-register">Senha</label>
+                        <input type="password" id="password-register" placeholder="Crie uma senha" required>
+                    </div>
+                    <div class="textfield">
+                        <label for="confirm-password">Confirmar Senha</label>
+                        <input type="password" id="confirm-password" placeholder="Confirme sua senha" required>
+                    </div>
+                    <button type="submit" class="btn-save">Criar Conta</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="dialog.js"></script>
+</body>
 </html>
