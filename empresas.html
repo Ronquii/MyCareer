@@ -1,165 +1,83 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Relação CSS  -->
-    <link rel="stylesheet" href="empresas/empresas.css">
-    <link rel="stylesheet" href="cabeçalho.css">
-    <script src="https://kit.fontawesome.com/f42e1bf442.js" crossorigin="anonymous"></script>
-    <!-- Título  -->
-    <title>My Career | Empresas</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./empresas/empresas.css" />
+    <title>My Career - Serviços</title>
 </head>
-
 <body>
-    <header>
-        <!-- Aaba de navegação -->
-        <nav class="nav-bar">
-            <div class="logo">
-                <a href="Pagina_inicial.html"><img src="Design/My1.png" alt=""></a>
+    <header class="navbar">
+        <figure class="logo">
+            <img src="Design/My1.png" alt="Logo My Career" />
+        </figure>
+        <ul class="nav-list">
+            <li class="nav-item"><a href="servicos.html" class="nav-link">Serviços</a></li>
+            <li class="nav-item"><a href="contate_nos.html" class="nav-link">Fale conosco</a></li>
+            <li class="nav-item"><a href="sobre_nos.html" class="nav-link">Sobre Nós</a></li>
+            <li class="nav-item"><a href="empresas.html" class="nav-link">Empresas</a></li>
+        </ul>
+        <div class="login-button">
+            <button class="btn-login">Entrar</button>
+        </div>
+        <!-- Menu de Perfil -->
+        <div class="profile-menu" id="profile-menu" style="display: none;">
+            <div class="profile-icon" id="profile-icon">
+                <!-- A "bolinha" do perfil -->
+                <img src="../MyCareer/Design/imagProfile.webp" alt="User Profile" />
             </div>
-            <div class="nav-list">
-                <ul>
-                    <!-- Ancoras -->
-                    <li class="nav-item"><a href="servicos.html" class="nav-link">Serviços</a></li>
-                    <li class="nav-item"><a href="contate_nos.html" class="nav-link">Contate-nos</a></li>
-                    <li class="nav-item"><a href="sobre_nos.html" class="nav-link">Sobre Nós</a></li>
-                    <li class="nav-item"><a href="empresas.html" class="nav-link">Empresas</a></li>
+            <div class="dropdown" id="dropdown">
+                <!-- Menu suspenso -->
+                <span id="user-name"></span>
+                <span id="user-email"></span>
+                <ul class="profile-links" id="profile-links">
+                    <li><a href="minha-conta.html">Minha Conta</a></li>
+                    <li><a href="configuracoes.html">Configurações</a></li>
+                    <li><a href="ajuda.html">Ajuda</a></li>
+                    <!-- Links adicionais da navbar -->
+                    <li><a href="servicos.html">Serviços</a></li>
+                    <li><a href="contate_nos.html">Fale conosco</a></li>
+                    <li><a href="sobre_nos.html">Sobre Nós</a></li>
+                    <li><a href="empresas.html">Empresas</a></li>
                 </ul>
-            </div>
-            <!-- Voltar ou Login -->
-            <div class="login-button">
-                <a href="index.html">Entrar</a>
-            </div>
-            <!-- Menu Mobile -->
-            <div class="mobile-menu-icon">
-                <button onclick="menuShow()"><img class="icon" src="Design/menu_white_36dp.svg" alt=""></button>
-            </div>
-        </nav>
-        <div class="mobile-menu">
-            <ul>
-                <li class="nav-item"><a href="servicos.html" class="nav-link">Serviços</a></li>
-                <li class="nav-item"><a href="contate_nos.html" class="nav-link">Contate-nos</a></li>
-                <li class="nav-item"><a href="sobre_nos.html" class="nav-link">Sobre Nós</a></li>
-                <li class="nav-item"><a href="empresas.html" class="nav-link">Empresas</a></li>
-            </ul>
-
-            <div class="login-button">
-                <a href="index.html">Entrar</a>
+                <button id="logout-btn" class="btn-logout">Sair</button>
             </div>
         </div>
     </header>
-    <!-- Texto Central -->
-    <div class="Card-home">
 
-        <h3>SEJA UM PARCEIRO</h3>
-        <h4>SEJA UM PARCEIRO</h4>
-        <!-- Informações Principais -->
-    </div>
-    <div class="infos">
+    <main>
+        <section class="hero">
+            <h1>Conheça Nossos Serviços</h1>
+            <p>Explore as melhores soluções para sua carreira profissional.</p>
+        </section>
 
-        <div class="text">
-            <p>
-                <mark>Na My Career acreditamos que o sucesso profissional é constituido com
-                    parceirias fortes e uma visão compartilhada de crescimento. Estamos à procura
-                    de empresas que compartilhem nossa paixão por desenvolvimento de talentos
-                    e inovação na carreira.</mark>
-            </p>
-        </div>
-        <!-- Quadrado Por que se juntar a nós? -->
-        <div class="green-card">
-            <article>
-                <p class="gd-font">
-                    Por que se juntar a nós?
-                </p>
-                <p class="gd-lista-um">
-                    • Impacto Conjunto: Trabalhando juntos, podemos
-                    proporcionar oportunidades excepcionais para
-                    profissionais de todo o mundo, impulsionando suas
-                    carreiras para novos patamares.
-                    <br>
-                    • Inovação e Crescimento: Combinando nossas expertise em
-                    alavancagem de carreira com a sua experiência no
-                    mercado, podemos criar soluções inovadoras que
-                    beneficiam tanto os profissionais quanto as empresas.<br>
-                    • Rede de Contatos: Conecte-se com uma comunidade
-                    vibrante de empresas e profissionais dedicados ao
-                    desemvolvimento continuo de suas habilidades e carreiras.
-                </p>
-            </article>
-        </div>
-        <div class="imgLado">
-            <img src="Design/imgTRES.png" alt="">
-        </div>
-        <!-- Quadrado Como Podemos Colaborar? -->
-        <div class="green-card-dois">
-            <article class="gcd-article-dois">
-                <p class="gd-font-dois">
-                    Como Podemos Colaborar:
-                </p>
-                <p class="gd-lista-dois">
-                    • Programas de desenvolvimento: Crie e ofereça
-                    programas de treinamento e capacitação que atendam
-                    às necessidades especificas do mercado.<br>
-                    • Parcerias Educacionais: Colabore conosco para
-                    oferecer cursos e certificações que preparem os
-                    profissionais para os desafios do futuro.<br>
-                    • Oportunidades de Recrutamento: Acesse uma rede de
-                    talentos qualificados, prontos para agregar valor à sua
-                    empresa.<br>
-                    • Eventos e Workshops: Participe de eventos de
-                    networking, workshops e conferências que promovem o
-                    crescimento e a inovação.<br>
-                </p>
-            </article>
-        </div>
-        <div class="imgdois">
-            <img src="Design/imagemUM.png" alt="">
-        </div>
-
-        <h1 class="parc"><mark> Empresas Parceiras </mark></h1>
-        <!-- Quadrado Entre em contato. -->
-        <div class="green-card-tres">
-            <article class="gcd-article-tres">
-                <p class="gd-font-dois">
-                    Entre em Contato:
-                </p>
-                <p class="gd-lista-tres">
-                    • Estamos entusiasmados para explorar como
-                    podemos trabalhar juntos. Se a sua empresa
-                    está interessada em fazer parte dessa jornada
-                    de transformação, entre em contato conosco e
-                    descubra como podemos construir um futuro
-                    promissor, lado a lado.
-                </p>
-            </article>
-            <div class="imgtres">
-                <img src="Design/imgDOIS.png" alt="">
+        <section class="cards">
+            <div class="card">
+                <h3>Consultoria de Carreiras</h3>
+                <ul>
+                    <li>Avaliação de habilidades e interesses</li>
+                    <li>Orientação profissional personalizada</li>
+                    <li>Desenvolvimento de planos de carreira</li>
+                </ul>
             </div>
-        </div>
-        <!-- Empresas parceiras -->
-        <div class="parceiros">
-            <div class="p1">
-                <img src="Design/alura.jpg" alt="">
-                <hr>
-                <h1> Alura </h1>
-                <p> A missão da Alura é transformar a vida pessoal e profissional das pessoas através
-                    da educação e da tecnologia. Para chegar nesse objetivo, nossas ações diárias e
-                    projetos são guiados por alguns valores que são considerados essenciais por todo
-                    mundo que trabalha com a gente.</p>
+            <div class="card">
+                <h3>Mentoria & Coaching</h3>
+                <ul>
+                    <li>Sessões individuais de coaching</li>
+                    <li>Programas de liderança e gestão</li>
+                    <li>Desenvolvimento de habilidades específicas</li>
+                </ul>
             </div>
-            <div class="p2">
-                <img src="Design/estacio.jpg" alt="">
-                <hr>
-                <h1> Estácio </h1>
-                <p> A missão da Integramos academia e gestão para oferecer uma educação transformadora
-                    ao maior número de pessoas, criando impacto positivo para a sociedade.</p>
+            <div class="card">
+                <h3>Orientação Educacional</h3>
+                <ul>
+                    <li>Recomendações de cursos e graduações</li>
+                    <li>Workshops e treinamentos</li>
+                    <li>Parcerias com instituições educacionais</li>
+                </ul>
             </div>
-        </div>
-    </div>
-    <script src="menu.js"></script>
+        </section>
+    </main>
+    <script src="empresas.js"></script>
 </body>
-
 </html>
