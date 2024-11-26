@@ -8,9 +8,23 @@ datasource db {
 }
 
 model User {
-  id        String   @id @default(uuid()) // Gera um UUID automaticamente
+  id        String         @id @default(uuid()) // Gera um UUID automaticamente
   name      String
-  email     String   @unique
+  email     String         @unique
   password  String
-  createdAt DateTime @default(now())
+  createdAt DateTime       @default(now())
+  FormData  FormData[]     // Relacionamento 1:N com FormData
+}
+
+model FormData {
+  id                String   @id @default(uuid()) // Gera um UUID automaticamente
+  telefone          String
+  cargo             String
+  area              String
+  preferenciaHorario String
+  desafios          String
+  consultoria       String
+  userId            String
+  user              User     @relation(fields: [userId], references: [id])
+  createdAt         DateTime @default(now())
 }

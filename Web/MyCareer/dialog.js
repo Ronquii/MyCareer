@@ -44,7 +44,7 @@ registerForm.addEventListener('submit', async (event) => {
 
     try {
         // Faz a requisição para a API de registro
-        const response = await fetch('http://localhost:3000/users/CreateUSer', {
+        const response = await fetch('http://localhost:8080/users/CreateUSer', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -81,7 +81,7 @@ document.getElementById('btn-login').addEventListener('click', async () => {
 
     try {
         // Realiza a requisição para a rota /Login
-        const response = await fetch('http://localhost:3000/auth/Login', {
+        const response = await fetch('http://localhost:8080/auth/Login', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',

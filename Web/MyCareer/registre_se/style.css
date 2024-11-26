@@ -42,7 +42,8 @@ body {
     display: flex;
     position: relative;
     justify-content: center;
-    top: 70px;
+    align-content: space-between;
+    top: 10px;
     color: #ffffff;
     font-size: 50px;
     font-family: sans-serif;
@@ -159,6 +160,7 @@ body {
     border-radius: 50px;
     position: relative;
     top: 3vb;
+    left: 5vb;
     font-size: 4vb;
     font-weight: 700;
     background-color: #00ffb7;
@@ -166,6 +168,8 @@ body {
     align-items: center;
     flex-direction: column;
 }
+
+
 .btn-login a {
     color: #373a80;
     text-decoration: none;
