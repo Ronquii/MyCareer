@@ -99,7 +99,7 @@ document.getElementById('btn-login').addEventListener('click', async () => {
             localStorage.setItem('authToken', data.token);
 
             // Redirecionar ou realizar outra ação
-            window.location.href = 'http://127.0.0.1:5500/Web/MyCareer/empresas.html';
+            window.location.href = 'https://ronquii.github.io/MyCareer/empresas.html';
         } else {
             // Exibe mensagem de erro
             alert(data.message || 'Erro ao realizar login.');
