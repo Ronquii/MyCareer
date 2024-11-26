@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Career | Carrinho de Compras</title>
+    <link rel="stylesheet" href="pagina_inicial/carrinho_compras.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+  <header>
+    <nav class="nav-bar">
+      <div class="logo_card">
+        <a href="Pagina_inicial.html"><img src="Design/My1.png"></img></a>
+      </div>
+      <div class="nav-list">
+        <ul>
+          <li class="nav-item"><a href="servicos.html" class="nav-link">Serviços</a></li>
+          <li class="nav-item"><a href="contate_nos.html" class="nav-link">Contate-nos</a></li>
+          <li class="nav-item"><a href="sobre_nos.html" class="nav-link">Sobre Nós</a></li>
+          <li class="nav-item"><a href="empresas.html" class="nav-link">Empresas</a></li>
+        </ul>
+      </div>
+      <div class="login-button">
+        <button><a href="index.html">Entrar</a></button>
+      </div>
+
+      <div class="mobile-menu-icon">
+        <button onclick="menuShow()"><img class="icon" src="Design/menu_white_36dp.svg" alt=""></button>
+      </div>
+    </nav>
+    <div class="mobile-menu">
+      <ul>
+        <li class="nav-item"><a href="serviços.html" class="nav-link">Serviços</a></li>
+        <li class="nav-item"><a href="contate_nos.html" class="nav-link">Contate-nos</a></li>
+        <li class="nav-item"><a href="sobre_nos.html" class="nav-link">Sobre Nós</a></li>
+        <li class="nav-item"><a href="empresas.html" class="nav-link">Empresas</a></li>
+      </ul>
+
+      <div class="login-button">
+        <button><a href="index.html">Entrar</a></button>
+      </div>
+    </div>
+  </header>
+    <main>
+      <div class="page-title">Seu Carrinho</div>
+      <div class="content">
+        <section>
+          <table>
+            <thead>
+              <tr>
+                <th>Produto</th>
+                <th>Preço</th>
+                <th>Quantidade</th>
+                <th>Total</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <div class="product">
+                    <img src="https://picsum.photos/100/120" alt="" />
+                    <div class="info">
+                      <div class="name">Mentoria</div>
+                      <div class="category">Receba uma mentoria completa!</div>
+                    </div>
+                  </div>
+                </td>
+                <td>R$ 399</td>
+                <td>
+                  <div class="qty">
+                    <button><i class="bx bx-minus"></i></button>
+                    <span>1</span>
+                    <button><i class="bx bx-plus"></i></button>
+                  </div>
+                </td>
+                <td>R$ 399</td>
+                <td>
+                  <button class="remove"><i class="bx bx-x"></i></button>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="product">
+                    <img src="https://picsum.photos/100/120" alt="" />
+                    <div class="info">
+                      <div class="name">Cursos de gestão de carreira </div>
+                      <div class="category">Acesse a cursos diversos para alavancar sua carreira.</div>
+                    </div>
+                  </div>
+                </td>
+                <td>R$ 119</td>
+                <td>
+                  <div class="qty">
+                    <button><i class="bx bx-minus"></i></button>
+                    <span>1</span>
+                    <button><i class="bx bx-plus"></i></button>
+                  </div>
+                </td>
+                <td>R$ 119</td>
+                <td>
+                  <button class="remove"><i class="bx bx-x"></i></button>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="product">
+                    <img src="https://picsum.photos/100/120" alt="" />
+                    <div class="info">
+                      <div class="name">Workshop de Networking</div>
+                      <div class="category">Tenha acesso a diversos Workshops de Networking.</div>
+                    </div>
+                  </div>
+                </td>
+                <td>R$ 149</td>
+                <td>
+                  <div class="qty">
+                    <button><i class="bx bx-minus"></i></button>
+                    <span>1</span>
+                    <button><i class="bx bx-plus"></i></button>
+                  </div>
+                </td>
+                <td>R$ 149</td>
+                <td>
+                  <button class="remove"><i class="bx bx-x"></i></button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+        <aside>
+          <div class="box">
+            <header>Resumo da compra</header>
+            <div class="info">
+              <div><span>Sub-total</span><span>R$ 667</span></div>
+              <div>
+                <button>
+                  Adicionar cupom de desconto
+                  <i class="bx bx-right-arrow-alt"></i>
+                </button>
+              </div>
+            </div>
+            <footer>
+              <span>Total</span>
+              <span>R$ 667</span>
+            </footer>
+          </div>
+          <button class="finalize-purchase">Finalizar Compra</button>
+        </aside>
+      </div>
+    </main>
+    <script src="carrinho_compras.js"></script>
+  </body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contate_nos/contate_nos.css">
+    <link rel="stylesheet" href="cabeçalho.css">
+    <title>My Career | Contate-nos</title>
+</head>
+
+<body>
+    <header>
+        <nav class="nav-bar">
+            <div class="logo">
+                <a href="Pagina_inicial.html"><img src="Design/My1.png" alt="Logo My Career"></a>
+            </div>
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="servicos.html" class="nav-link">Serviços</a></li>
+                    <li class="nav-item"><a href="contate_nos.html" class="nav-link">Contate-nos</a></li>
+                    <li class="nav-item"><a href="sobre_nos.html" class="nav-link">Sobre Nós</a></li>
+                    <li class="nav-item"><a href="empresas.html" class="nav-link">Empresas</a></li>
+                </ul>
+            </div>
+            <div class="login-button">
+                <a href="index.html">Entrar</a>
+            </div>
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="Design/menu_white_36dp.svg" alt="Ícone de menu"></button>
+            </div>
+        </nav>
+    </header>
+
+    <main class="contate-nos">
+        <section class="infos">
+            <h1>Informações de contato</h1>
+            <p>Obrigado por nos contatar!<br>
+                Entre em contato com o nosso SAC: 0800 1234 5678<br>
+                Rua Dr. Sales de Oliveira 1661 (Vila Industrial), Campinas, SP, 13035-500<br>
+                <a href="mailto:mycareer@sac.com.br">mycareer@sac.com.br</a>
+            </p>
+        </section>
+
+        <section class="formResp">
+            <div class="formulário">
+                <form method="post">
+                    <fieldset class="grupo">
+                        <div class="formElement">
+                            <label for="telefone">Telefone:</label>
+                            <input class="inpPlace" id="telefone" type="tel" name="telefone" placeholder="Informe seu telefone" required>
+                            <br>
+                            <label for="cargo">Qual é o seu cargo atual?</label>
+                            <input class="inpPlace" id="cargo" type="text" name="cargo" placeholder="Informe seu cargo" required>
+                            <br>
+                            <label for="area">Qual área você quer atuar ou transitar em sua carreira?</label>
+                            <input class="inpPlace" id="area" type="text" name="area" placeholder="Ex: Tecnologia, Gestão, Design, etc." required>
+                            <br>
+                            <label for="motivo_contato">Preferência de horário para contato:</label>
+                            <select name="motivo_contato" id="motivo_contato" required>
+                                <option value="">Selecione</option>
+                                <option value="manhã">Manhã</option>
+                                <option value="tarde">Tarde</option>
+                                <option value="noite">Noite</option>
+                            </select>
+                            <br>
+                            <label for="desafios">Quais são os desafios que você está enfrentando na sua carreira?</label><br>
+                            <textarea id="desafios" name="desafios" placeholder="Descreva os principais desafios que você está enfrentando" style="resize: none" required></textarea>
+                            <br>
+                            <fieldset class="checkbox">
+                                <legend>Objetivo de Consultoria:</legend>
+                                <input type="radio" id="op1" name="consultoria" value="Crescimento Profissional" required>
+                                <label for="op1">Crescimento Profissional</label>
+                                <input type="radio" id="op2" name="consultoria" value="Mudança de Carreira" required>
+                                <label for="op2">Mudança de Carreira</label>
+                            </fieldset>
+                        </div>
+                        <button type="submit" class="submitbt">Enviar</button>
+                    </fieldset>
+                </form>
+            </div>
+        </section>
+    </main>
+    <script src="contate_nos.js"></script>
+</body>
+
+</html>

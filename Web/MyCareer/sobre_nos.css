@@ -1,0 +1,71 @@
+
+body{
+    background-color: #132D46;
+}
+
+.Card-home {
+    display: flex;
+    background-color: #132d46;
+    margin-top: 0;
+    margin-bottom: 0;
+    height: 600px;
+    justify-content: center;
+
+}
+.Card-home>h3 {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-self: center;
+    font-size: 100px;
+    font-family: Calibri, sans-serif;
+    font-weight: 400;
+    color: #ffff;
+}
+.infos {
+    display: flex;
+    width: 100%;
+    height: 90vh;
+    background-color: white;
+}
+.text {
+    background-color: white;
+    display: flex;
+    margin-right: 5%;
+    font-size: 3cap;
+    padding-top: 30px;
+    padding-left: 30px;
+}
+
+@media screen and (max-width: 981px) and (min-width: 500px){
+    .infos{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media screen and (max-width: 500px){
+
+    body{
+        height: 100%;
+        width: 100%;
+    }
+
+    .Card-home {
+       height: 100vh;
+       width: 100vw;
+    }
+    .Card-home h3{
+        font-size: 4cap;
+    }
+    .infos {
+        height: 100%;
+    }
+    .imgLado {
+        display: none;
+    }
+
+
+}

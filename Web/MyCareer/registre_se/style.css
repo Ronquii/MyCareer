@@ -1,0 +1,293 @@
+body {
+    margin: 0;
+}
+
+.main-login {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("https://c.pxhere.com/photos/7d/4a/milky_way_starry_sky_night_sky_star_night_sky_space_cosmos-1438751.jpg!d");
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+    background-blend-mode: multiply;
+
+
+}
+
+.main-login::after {
+    content: '';
+    background-color: #0c0e13;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    opacity: 0.94;
+    z-index: -1;
+}
+
+.left-login {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.left-login>h1 {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-content: space-between;
+    top: 10px;
+    color: #ffffff;
+    font-size: 50px;
+    font-family: sans-serif;
+    font-weight: 700;
+    width: 100%;
+}
+
+.left-login>h2 {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    bottom: 70px;
+    color: #ffffff;
+    font-size: 50px;
+    font-family: sans-serif;
+    font-weight: 700;
+    width: 100%;
+}
+
+.right-login {
+    position: block;
+    width: 40vw;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.card-login {
+    width: 20vw;
+    display: flex;
+    position: block;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px 30px;
+    background: #132d46;
+    border: 40px solid;
+    border-color: #122135;
+    border-radius: 120px;
+    font-family: Calibri, sans-serif;
+    z-index: 1;
+}
+
+.card-login>h1 {
+    color: rgb(225, 222, 222);
+    display: block;
+    position: relative;
+    font-size: 40px;
+    top: -20px;
+}
+
+.textfield1 {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    flex-direction: column;
+    color: rgb(255, 255, 255);
+    top: -10px;
+}
+
+.textfield1>label {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    flex-direction: column;
+    color: rgb(255, 255, 255);
+    top: -10px;
+}
+
+.textfield2>label {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    flex-direction: column;
+    color: rgb(255, 255, 255);
+    top: -5px;
+}
+
+.lbr_senha {
+    position: relative;
+}
+.lbr_senha input {
+    cursor: pointer;
+}
+
+.textfield1>input {
+    width: 20vw;
+    height: 6vh;
+    border: none;
+    border-radius: 60px;
+    background: #373a80;
+    font-size: 12pt;
+    border: #0c0e13;
+    border-style: solid;
+    border-width: 1px;
+
+}
+
+.textfield2>input {
+    width: 20vw;
+    height: 6vh;
+    border: none;
+    border-radius: 60px;
+    background: #373a80;
+    font-size: 12pt;
+    border: #0c0e13;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.btn-login {
+    width: 15vw;
+    height: 6vh;
+    border-radius: 50px;
+    position: relative;
+    top: 3vb;
+    left: 5vb;
+    font-size: 4vb;
+    font-weight: 700;
+    background-color: #00ffb7;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.btn-login a {
+    color: #373a80;
+    text-decoration: none;
+}
+.lbr_senha {
+    display: flex;
+    position: relative;
+    top: 10px;
+    right: 3vw;
+    color: #ffffff;
+}
+
+.recovery {
+    position: relative;
+    left: 6vw;
+    font-weight: 500;
+}
+.recovery label{
+    cursor: pointer;
+}
+
+.Conta {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 5vb;
+    color: rgb(255, 255, 255);
+    font-size: 90%;
+    font-family: sans-serif;
+    font-weight: 600;
+}
+.crconta {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.aguia{
+    width: 30%;
+	z-index:0;
+	position: absolute;
+	opacity: 0.6;}
+
+.linhas{
+	z-index: 0;
+	position: relative;
+	opacity: 0.6;
+	width: 100%;
+	height: 100%;
+	left: 80%;
+}
+
+@media screen and (max-width: 981px) and (min-width: 500px){
+    .left-login{
+        display: none;
+    }
+    .right-login{
+        display: flex;
+        justify-self: center;
+        align-items: center;
+        width: 60%;
+    }
+    .card-login {
+        display: relative;
+        border-radius: 100px;
+        width: 100%;
+        }
+    .linhas{
+        display: none;
+    }
+    .Conta{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100;
+    }
+    .textfield1 input {
+        width: 40vw;
+    }
+    .textfield2 input{
+        width: 40vw;
+    }
+    .btn-login{
+        width: 100%;
+        font-size: 20px;
+        height: 40px;
+    }
+
+}  
+@media screen and (max-width: 500px){
+    .card-login{
+     width:80%;
+    }
+    .right-login{
+        width: 80%;
+      }
+    .left-login{
+        display: none;
+    }
+    .linhas{
+        display: none;
+    }
+    .textfield1 > input {
+        width: 100%;
+    }
+    .textfield2 input {
+        width: 100%;
+    }
+    .btn-login{
+        width: 100%;
+    }
+    .Conta label{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+}
