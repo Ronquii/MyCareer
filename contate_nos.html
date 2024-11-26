@@ -27,28 +27,13 @@
             <div class="login-button">
                 <a href="index.html">Entrar</a>
             </div>
-
             <div class="mobile-menu-icon">
                 <button onclick="menuShow()"><img class="icon" src="Design/menu_white_36dp.svg" alt="Ícone de menu"></button>
             </div>
         </nav>
-        <div class="mobile-menu">
-            <ul>
-                <li class="nav-item"><a href="servicos.html" class="nav-link">Serviços</a></li>
-                <li class="nav-item"><a href="contate_nos.html" class="nav-link">Contate-nos</a></li>
-                <li class="nav-item"><a href="sobre_nos.html" class="nav-link">Sobre Nós</a></li>
-                <li class="nav-item"><a href="empresas.html" class="nav-link">Empresas</a></li>
-            </ul>
-
-            <div class="login-button">
-                <a href="index.html">Entrar</a>
-            </div>
-        </div>
     </header>
+
     <main class="contate-nos">
-        <section class="contato">
-            <h6>CONTATE-NOS</h6>
-        </section>
         <section class="infos">
             <h1>Informações de contato</h1>
             <p>Obrigado por nos contatar!<br>
@@ -57,13 +42,14 @@
                 <a href="mailto:mycareer@sac.com.br">mycareer@sac.com.br</a>
             </p>
         </section>
+
         <section class="formResp">
             <div class="formulário">
-                <form action="https://webhook.site/fb4056f4-7ed5-4705-93cd-cd7ac345fdd1" method="post">
+                <form method="post">
                     <fieldset class="grupo">
                         <div class="formElement">
                             <label for="telefone">Telefone:</label>
-                            <input class="inpPlace" id="telefone" type="tel" name="Telefone" placeholder="Informe seu telefone" required>
+                            <input class="inpPlace" id="telefone" type="tel" name="telefone" placeholder="Informe seu telefone" required>
                             <br>
                             <label for="cargo">Qual é o seu cargo atual?</label>
                             <input class="inpPlace" id="cargo" type="text" name="cargo" placeholder="Informe seu cargo" required>
@@ -80,25 +66,23 @@
                             </select>
                             <br>
                             <label for="desafios">Quais são os desafios que você está enfrentando na sua carreira?</label><br>
-                            <textarea id="desafios" name="desafios" placeholder="Descreva os principais desafios que você está enfrentando na sua carreira, como falta de oportunidades, dificuldades em transitar para uma nova área, etc." style="resize: none" required></textarea>
+                            <textarea id="desafios" name="desafios" placeholder="Descreva os principais desafios que você está enfrentando" style="resize: none" required></textarea>
                             <br>
                             <fieldset class="checkbox">
                                 <legend>Objetivo de Consultoria:</legend>
-                                <input type="radio" id="op1" name="consultoria" value="Crescimento Profissional">
+                                <input type="radio" id="op1" name="consultoria" value="Crescimento Profissional" required>
                                 <label for="op1">Crescimento Profissional</label>
-
-                                <input type="radio" id="op2" name="consultoria" value="Mudança de Carreira">
+                                <input type="radio" id="op2" name="consultoria" value="Mudança de Carreira" required>
                                 <label for="op2">Mudança de Carreira</label>
                             </fieldset>
                         </div>
-
                         <button type="submit" class="submitbt">Enviar</button>
                     </fieldset>
                 </form>
             </div>
         </section>
     </main>
-    <script src="menu.js"></script>
+    <script src="contate_nos.js"></script>
 </body>
 
 </html>
