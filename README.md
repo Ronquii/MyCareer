@@ -20,4 +20,4 @@ Evidenciar serviços oferecidos pela nossa empresa e sua funcionalidade
 
 Seja um parceiro/Empresas: Pagina voltada para quem deseja ser um parceiro da empresa.
 
-Design do site: https://www.figma.com/proto/Fg7obJnnZiqsaBKBUp6wt1/Untitled?node-id=0-1&t=QKbQkLIFFgWLQpgS-1
+Design do site está localizado na pasta Design e com nome de "Design da pagina"
